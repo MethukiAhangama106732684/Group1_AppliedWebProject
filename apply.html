@@ -143,6 +143,29 @@
                         <input type="file" id="others" name="others" accept=".pdf,.doc,.docx">
                     </fieldset>
                     <br><br>
+                    <fieldset>
+                        <!--Form Fields for Skills-->
+                        <legend>Skills</legend>
+                        <p>Select all that apply:</p>
+                        <label for="skills">Please list your relevant skills:</label>
+                        <input type="checkbox" id="skills" name="skills[]" value="network_security" required>
+                        <label for="skills">Network Security</label>
+                        <input type="checkbox" id="skills" name="skills[]" value="penetration_testing">
+                        <label for="skills">Penetration Testing</label>
+                        <input type="checkbox" id="skills" name="skills[]" value="incident_response">
+                        <label for="skills">Incident Response</label>
+                        <input type="checkbox" id="skills" name="skills[]" value="malware_analysis">
+                        <label for="skills">Malware Analysis</label>
+                        <input type="checkbox" id="skills" name="skills[]" value=" digital_forensics">
+                        <label for="skills"> Digital Forensics</label>
+                        <input type="checkbox" id="skills" name="skills[]" value="Vulnerability_Assessment">
+                        <label for="skills">Vulnerability Assessment</label>
+                        <input type="checkbox" id="skills" name="skills[]" value="Cloud_Security">
+                        <label for="skills">Cloud Security</label>
+                        <br><br>
+                        <label for="other_skills">Other Skills:</label>
+                        <textarea type="text" id="other_skills" name="other_skills" placeholder="Please list any other relevant skills..." rows="4" cols="50"></textarea>
+                    </fieldset>
                     <input type="submit" value="Submit Application">
             </section>
         </main>
