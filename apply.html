@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!--:I added some meta tags and a temporary title to get started.
+     The content is not final, so we need to review them together and decide on the final meta tags and website title..-->
+    <!---charset declaration-->
+        <meta charset="UTF-8">
+    <!---viewport settings for responsive design-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---paged description for SEO-->
+        <meta name="description" content="Cybersecurity Service Company">
+    <!---keywords for SEO-->
+        <meta name="keywords" content="cybersecurity, service, company">
+    <!---author information-->
+        <meta name="author" content="cybersecurity service company">
+    <title>Cybersecurity Service Company</title>
+    </head>
+    <body>
+        <header>
+            <h1>Cybersecurity Service Company</h1>
+            <p>We provide top-notch cybersecurity services to protect your digital assets.</p>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Position Description</a>
+            <a href="apply.html">Job Application</a>
+            <a href="about.html">About the Team</a>
+        </nav>
+        <main>
+            <section>
+                <h2>Job Application</h2>
+                <p>Please fill out the form below to apply for a position at our company.</p>
+                <!-- Application form would go here -->
+                <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+                    <fieldset>
+                        <!--form field for Job reference Number-->
+                        <label for="job_ref">Job Reference Number:</label>
+                        <input type="text" id="job_ref" name="job_ref" pattern="[A-Za-z0-9]{6}" minlength="6" maxlength="6" required>
+                    </fieldset>
+                    <fieldset>
+                        <!-- Form fields for personal information -->
+                        <legend>Personal Information</legend>
+                        <!-- Form fields for first name, last name, date of birth -->
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname" pattern="[A-Za-z ]+{2,20}" maxlength="20" placeholder="Please enter your first name" required>
+                        <br><br>
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname" pattern="[A-Za-z ]+{2,20}" maxlength="20" placeholder="Please enter your last name" required>
+                        <label for="DOB">Date of Birth:</label>
+                        <input type="date" id="DOB" name="DOB" placeholder="dd/mm/yyyy" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required>
+                        <br><br>
+                        <fieldset>
+                            <!-- Form fields for gender selection -->
+                            <legend>Gender</legend>
+                            <!-- Radio buttons for gender selection -->
+                            <!--Male option-->
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                            <!--Female option-->
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Female</label>
+                            <!--Other option-->
+                            <input type="radio" id="other" name="gender" value="other" required>
+                            <label for="other">Other</label>
+                            <!--Prefer not to say option-->
+                            <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say" required>
+                            <label for="prefer-not-to-say">Prefer not to say</label>
+                        </fieldset>
+                        <br><br>
+                    </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <!-- Form fields for position information -->
+                        <legend>Position Information</legend>
+                        <label for="position">Position Applied For:</label>
+                        <select id="position" name="position" required>
+                            <option value="">Select a position</option>
+                            <option value="security_analyst">Security Analyst</option>
+                            <option value="penetration_tester">Penetration Tester</option>
+                            <option value="incident_responder">Incident Responder</option>
+                        </select>
+                    </fieldset>
+                    <br><br>
+                    <input type="submit" value="Submit Application">
+            </section>
+        </main>
+    </body>
+</html>
