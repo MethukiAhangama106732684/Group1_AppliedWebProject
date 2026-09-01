@@ -166,6 +166,39 @@
                         <label for="other_skills">Other Skills:</label>
                         <textarea type="text" id="other_skills" name="other_skills" placeholder="Please list any other relevant skills..." rows="4" cols="50"></textarea>
                     </fieldset>
+                    <fieldset>
+                        <!--Form Fields for Education-->
+                        <legend>Education</legend>
+                        <label for="education">Please list your educational background:</label>
+                        <br><br>
+                        <label for="highest_degree">Highest Degree Obtained:</label>
+                        <input type="text" id="highest_degree" name="highest_degree" maxlength="50" required>
+                        <br><br>
+                        <label for="institution">Institution:</label>
+                        <input type="text" id="institution" name="institution" maxlength="100" required>
+                        <br><br>
+                        <label for="graduation_year">Year of Graduation:</label>
+                        <input type="text" id="graduation_year" name="graduation_year" pattern="[0-9]{4}" maxlength="4" required>
+                        <br><br>
+                        <label for="additional_education">Additional Education or Certifications:</label>
+                        <textarea type="text" id="additional_education" name="additional_education" placeholder="Please list any additional education or certifications..." rows="4" cols="50"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <!--Form Fields for Availability-->
+                        <legend>Availability</legend>
+                        <label for="availability">Please indicate your availability:</label>
+                        <br><br>
+                        <input type="checkbox" id="availability" name="availability[]" value="monday">
+                        <label for="availability">Monday</label>
+                        <input type="checkbox" id="availability" name="availability[]" value="tuesday">
+                        <label for="availability">Tuesday</label>
+                        <input type="checkbox" id="availability" name="availability[]" value="wednesday">
+                        <label for="availability">Wednesday</label>
+                        <input type="checkbox" id="availability" name="availability[]" value="thursday">
+                        <label for="availability">Thursday</label>
+                        <input type="checkbox" id="availability" name="availability[]" value="friday">
+                        <label for="availability">Friday</label>
+                    </fieldset>
                     <input type="submit" value="Submit Application">
             </section>
         </main>
