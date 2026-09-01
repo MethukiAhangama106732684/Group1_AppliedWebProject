@@ -129,6 +129,20 @@
                         <label for="email">Email Address:</label>
                         <input type="email" id="email" name="email" placeholder="example@domain.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                     </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <!--Form Fields for resume upload and other documents-->
+                        <legend>Resume Upload</legend>
+                        <label for="resume">Upload your resume (PDF, DOC, DOCX):</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                        <br><br>
+                        <label for="cover_letter">Upload your cover letter (PDF, DOC, DOCX):</label>
+                        <input type="file" id="cover_letter" name="cover_letter" accept=".pdf,.doc,.docx">
+                        <br><br>
+                        <label for="others">Upload any relevant certifications (PDF, DOC, DOCX):</label>
+                        <input type="file" id="others" name="others" accept=".pdf,.doc,.docx">
+                    </fieldset>
+                    <br><br>
                     <input type="submit" value="Submit Application">
             </section>
         </main>
