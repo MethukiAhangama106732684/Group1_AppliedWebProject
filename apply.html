@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!--:I added some meta tags and a temporary title to get started.
+     The content is not final, so we need to review them together and decide on the final meta tags and website title..-->
+    <!---charset declaration-->
+        <meta charset="UTF-8">
+    <!---viewport settings for responsive design-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---paged description for SEO-->
+        <meta name="description" content="Cybersecurity Service Company">
+    <!---keywords for SEO-->
+        <meta name="keywords" content="cybersecurity, service, company">
+    <!---author information-->
+        <meta name="author" content="cybersecurity service company">
+    <title>Cybersecurity Service Company</title>
+    </head>
+    <body>
+        <header>
+            <h1>Cybersecurity Service Company</h1>
+            <p>We provide top-notch cybersecurity services to protect your digital assets.</p>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Position Description</a>
+            <a href="apply.html">Job Application</a>
+            <a href="about.html">About the Team</a>
+        </nav>
+        <main>
+            <section>
+                <h2>Job Application</h2>
+                <p>Please fill out the form below to apply for a position at our company.</p>
+                <!-- Application form would go here -->
+                <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+                    <fieldset>
+                        <!--form field for Job reference Number-->
+                        <label for="job_ref">Job Reference Number:</label>
+                        <input type="text" id="job_ref" name="job_ref" pattern="[A-Za-z0-9]{6}" minlength="6" maxlength="6" required>
+                    </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <!-- Form fields for personal information -->
+                        <legend>Personal Information</legend>
+                        <!-- Form fields for first name, last name, date of birth -->
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname" pattern="[A-Za-z ]+{2,20}" maxlength="20" placeholder="Please enter your first name" required>
+                        <br><br>
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname" pattern="[A-Za-z ]+{2,20}" maxlength="20" placeholder="Please enter your last name" required>
+                        <br><br>
+                        <label for="DOB">Date of Birth:</label>
+                        <input type="date" id="DOB" name="DOB" placeholder="dd/mm/yyyy" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required>
+                        <br><br>
+                        <fieldset>
+                            <!-- Form fields for gender selection -->
+                            <legend>Gender</legend>
+                            <!-- Radio buttons for gender selection -->
+                            <!--Male option-->
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                            <!--Female option-->
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Female</label>
+                            <!--Other option-->
+                            <input type="radio" id="other" name="gender" value="other" required>
+                            <label for="other">Other</label>
+                            <!--Prefer not to say option-->
+                            <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say" required>
+                            <label for="prefer-not-to-say">Prefer not to say</label>
+                        </fieldset>
+                        <br><br>
+                    </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <!--Form fields for address-->
+                        <legend>Address</legend>
+                        <!-- Form fields for street address, suburb/town, state, and postcode -->
+                        <label for="street">Street Address:</label>
+                        <input type="text" id="street" name="street" maxlength="40" required>
+                        <br><br>
+                        <label for="suburb/town">Suburb/Town:</label>
+                        <input type="text" id="suburb/town" name="suburb/town" maxlength="40" required>
+                        <br><br>
+                        <label for="state">State:</label>
+                        <select id="state" name="state" required>
+                            <option value="">Select a state</option>
+                            <option value="NSW">NSW</option>
+                            <option value="VIC">VIC</option>
+                            <option value="QLD">QLD</option>
+                            <option value="WA">WA</option>
+                            <option value="SA">SA</option>
+                            <option value="TAS">TAS</option>
+                            <option value="NT">NT</option>
+                            <option value="ACT">ACT</option>
+                        </select>
+                        <br><br>
+                        <label for="postcode">Postcode:</label>
+                        <input type="text" id="postcode" name="postcode" pattern="[0-9]{4}" maxlength="4" required>
+                    </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <!-- Form fields for position information -->
+                        <legend>Position Information</legend>
+                        <label for="position">Position Applied For:</label>
+                        <select id="position" name="position" required>
+                            <option value="">Select a position</option>
+                            <option value="security_analyst">Security Analyst</option>
+                            <option value="penetration_tester">Penetration Tester</option>
+                            <option value="incident_responder">Incident Responder</option>
+                        </select>
+                        <br><br>
+                        <label for="employment_type">Employment Type:</label>
+                        <select id="employment_type" name="employment_type" required>
+                            <option value="">Select employment type</option>
+                            <option value="full_time">Full-time</option>
+                            <option value="part_time">Part-time</option>
+                            <option value="contract">Contract</option>
+                            <option value="internship">Internship</option>
+                            <option value="casual">Casual</option>
+                        </select>
+                    </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <!--Form Fields for contact information-->
+                        <legend>Contact Information</legend>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{8,12}" maxlength="12" required>
+                        <br><br>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                    </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <!--Form Fields for resume upload and other documents-->
+                        <legend>Resume Upload</legend>
+                        <label for="resume">Upload your resume (PDF, DOC, DOCX):</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                        <br><br>
+                        <label for="cover_letter">Upload your cover letter (PDF, DOC, DOCX):</label>
+                        <input type="file" id="cover_letter" name="cover_letter" accept=".pdf,.doc,.docx">
+                        <br><br>
+                        <label for="others">Upload any relevant certifications (PDF, DOC, DOCX):</label>
+                        <input type="file" id="others" name="others" accept=".pdf,.doc,.docx">
+                    </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <!--Form Fields for Skills-->
+                        <legend>Skills</legend>
+                        <p>Select all that apply:</p>
+                        <label for="skills">Please list your relevant skills:</label>
+                        <input type="checkbox" id="skills" name="skills[]" value="network_security" required>
+                        <label for="skills">Network Security</label>
+                        <input type="checkbox" id="skills" name="skills[]" value="penetration_testing">
+                        <label for="skills">Penetration Testing</label>
+                        <input type="checkbox" id="skills" name="skills[]" value="incident_response">
+                        <label for="skills">Incident Response</label>
+                        <input type="checkbox" id="skills" name="skills[]" value="malware_analysis">
+                        <label for="skills">Malware Analysis</label>
+                        <input type="checkbox" id="skills" name="skills[]" value=" digital_forensics">
+                        <label for="skills"> Digital Forensics</label>
+                        <input type="checkbox" id="skills" name="skills[]" value="Vulnerability_Assessment">
+                        <label for="skills">Vulnerability Assessment</label>
+                        <input type="checkbox" id="skills" name="skills[]" value="Cloud_Security">
+                        <label for="skills">Cloud Security</label>
+                        <br><br>
+                        <label for="other_skills">Other Skills:</label>
+                        <textarea type="text" id="other_skills" name="other_skills" placeholder="Please list any other relevant skills..." rows="4" cols="50"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <!--Form Fields for Education-->
+                        <legend>Education</legend>
+                        <label for="education">Please list your educational background:</label>
+                        <br><br>
+                        <label for="highest_degree">Highest Degree Obtained:</label>
+                        <input type="text" id="highest_degree" name="highest_degree" maxlength="50" required>
+                        <br><br>
+                        <label for="institution">Institution:</label>
+                        <input type="text" id="institution" name="institution" maxlength="100" required>
+                        <br><br>
+                        <label for="graduation_year">Year of Graduation:</label>
+                        <input type="text" id="graduation_year" name="graduation_year" pattern="[0-9]{4}" maxlength="4" required>
+                        <br><br>
+                        <label for="additional_education">Additional Education or Certifications:</label>
+                        <textarea type="text" id="additional_education" name="additional_education" placeholder="Please list any additional education or certifications..." rows="4" cols="50"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <!--Form Fields for Availability-->
+                        <legend>Availability</legend>
+                        <label for="availability">Please indicate your availability:</label>
+                        <br><br>
+                        <input type="checkbox" id="availability" name="availability[]" value="monday">
+                        <label for="availability">Monday</label>
+                        <input type="checkbox" id="availability" name="availability[]" value="tuesday">
+                        <label for="availability">Tuesday</label>
+                        <input type="checkbox" id="availability" name="availability[]" value="wednesday">
+                        <label for="availability">Wednesday</label>
+                        <input type="checkbox" id="availability" name="availability[]" value="thursday">
+                        <label for="availability">Thursday</label>
+                        <input type="checkbox" id="availability" name="availability[]" value="friday">
+                        <label for="availability">Friday</label>
+                    </fieldset>
+                    <br><br>
+                    <!-- Form buttons -->
+                    <button type="button">Save</button>
+                    <button type="button">Close</button>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+            </section>
+        </main>
+    </body>
+</html>
