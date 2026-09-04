@@ -1,17 +1,17 @@
-:root {
+:root { /* CSS variables for consistent theming across the page */
       --ink: #10161c;
-      --accent: #1fb6a4;
-      --accent-dark: #0f6d63;
+      --accent: #1f84b6;
+      --accent-dark: #0f446d;
       --panel: #f4f7f7;
     }
 
-.about-hero {
+.about-hero { /* Hero section styling for the about page */
       background-color: var(--panel);
       padding: 2rem 1.5rem;
       border-left: 4px solid var(--accent);
     }
 
-.student-id {
+.student-id { /* Styling for student ID elements to make them stand out */
       font-family: monospace;
       background-color: #e7f6f4;
       color: var(--accent-dark);
@@ -19,32 +19,32 @@
       border-radius: 3px;
     }
 
-.team-photo {
+.team-photo { /* Styling for the team photo figure to ensure it is responsive and visually appealing */
       max-width: 480px;
       width: 100%;
       border: 3px solid var(--accent);
       border-radius: 6px;
     }
 
-figure.team-figure figcaption {
+figure.team-figure figcaption { /* Styling for the caption of the team photo figure */
       margin-top: 0.5rem;
       font-style: italic;
       color: #4a4a4a;
     }
 
-table.fun-facts {
+table.fun-facts { /* Styling for the fun facts table to ensure readability and visual appeal */
       border-collapse: collapse;
       width: 100%;
       margin: 1.5rem 0;
     }
 
-table.fun-facts caption {
+table.fun-facts caption { /* Styling for the caption of the fun facts table */
       text-align: left;
       font-weight: bold;
       margin-bottom: 0.5rem;
     }
 
-table.fun-facts th, table.fun-facts td {
+table.fun-facts th, table.fun-facts td { /* Styling for table headers and data cells to ensure proper spacing and alignment */
       border: 1px solid #ccc;
       padding: 0.6rem 0.8rem;
       text-align: left;
