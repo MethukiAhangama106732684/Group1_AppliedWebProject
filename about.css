@@ -1,0 +1,83 @@
+    :root {
+      --ink: #10161c;
+      --accent: #1fb6a4;
+      --accent-dark: #0f6d63;
+      --panel: #f4f7f7;
+    }
+
+    .about-hero {
+      background-color: var(--panel);
+      padding: 2rem 1.5rem;
+      border-left: 4px solid var(--accent);
+    }
+
+    .student-id {
+      font-family: monospace;
+      background-color: #e7f6f4;
+      color: var(--accent-dark);
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+    }
+
+    .team-photo {
+      max-width: 480px;
+      width: 100%;
+      border: 3px solid var(--accent);
+      border-radius: 6px;
+    }
+
+    figure.team-figure figcaption {
+      margin-top: 0.5rem;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+
+    table.fun-facts {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1.5rem 0;
+    }
+
+    table.fun-facts caption {
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    table.fun-facts th,
+    table.fun-facts td {
+      border: 1px solid #ccc;
+      padding: 0.6rem 0.8rem;
+      text-align: left;
+    }
+
+    table.fun-facts th {
+      background-color: var(--accent);
+      color: #ffffff;
+    }
+
+    table.fun-facts tbody tr:hover {
+      background-color: #e7f6f4;
+    }
+
+    dl.contributions dt {
+      font-weight: bold;
+      margin-top: 0.75rem;
+    }
+
+    dl.contributions dd {
+      margin-left: 1rem;
+    }
+
+    blockquote.member-quote {
+      border-left: 3px solid var(--accent);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background-color: var(--panel);
+    }
+
+    blockquote.member-quote .translation {
+      color: #555;
+      font-size: 0.95rem;
+      margin-top: 0.3rem;
+    }
