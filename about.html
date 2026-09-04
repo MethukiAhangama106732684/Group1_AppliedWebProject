@@ -6,31 +6,43 @@
   <title>About the Team | IRONGATE Cybersecurity</title>
   <link rel="stylesheet" href="styles/about.css">
 
+  <!-- Embedded CSS: one small, page-specific example, kept limited
+       as required. The rest of this page's styling lives in styles.css. -->
+  <style>
+    .about-hero h1 {
+      color: #0f6d63;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <div class="logo">IRONGATE Cybersecurity</div>
     <nav>
-            <a href="index.html">Home</a>
-            <a href="jobs.html">Position Description</a>
-            <a href="apply.html">Job Application</a>
-        </nav>
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Position Description</a>
+      <a href="apply.html">Job Application</a>
+      <a href="about.html">About Us</a>
+    </nav>
   </header>
 
   <main>
 
     <!-- Nested list: group name and tutorial info -->
-    <section class="about-hero" aria-labelledby="team-heading">
-      <h1 id="team-heading">About Our Team</h1>
-        <li>IRONGATE Cybersecurity
-             <ul>Tutorial class: Thursday, 12:30pm&ndash;2:30pm</ul>
-         </li>
+    <section class="about-hero">
+      <h1>About Our Team</h1>
+      <ul>
+        <li>HighDistinctivers
+          <ul>
+            <li>Tutorial class: Thursday, 12:30pm&ndash;2:30pm</li>
+          </ul>
+        </li>
+      </ul>
     </section>
 
     <!-- Definition list: member contributions -->
-    <section aria-labelledby="contrib-heading">
-      <h2 id="contrib-heading">Team Contributions</h2>
+    <section>
+      <h2>Team Contributions</h2>
       <dl class="contributions">
         <dt>Shared Responsibility</dt>
         <dd>HTML, CSS, and testing across the whole website.</dd>
@@ -49,38 +61,38 @@
       </dl>
     </section>
 
-    <!-- Member quotes: replace placeholders once collected -->
-    <section aria-labelledby="quotes-heading">
-      <h2 id="quotes-heading">In Our Own Words</h2>
+    <!-- Member quotes -->
+    <section>
+      <h2>In Our Own Words</h2>
 
-      <blockquote class="member-quote" lang="und">
+      <div class="member-quote" lang="si">
         <p>"කෑවොත් බඩේ, කිව්වොත් කටේ"</p>
         <p class="translation">English: Once you say something, you can't take it back, so think before you speak</p>
-        <footer>&mdash; Methuki Ahangama</footer>
-      </blockquote>
+        <p class="quote-author">&mdash; Methuki Ahangama</p>
+      </div>
 
-      <blockquote class="member-quote" lang="und">
+      <div class="member-quote" lang="ta">
         <p>"வராதவனுக்காக வந்தவன் போகல… போனவனுக்காக வராதவன் வந்துட்டான்"</p>
         <p class="translation">English: The one who came didn't leave for the one who didn't come… the one who didn't come arrived for the one who left</p>
-        <footer>&mdash; Shakthi Shree Gurumurthy Senthilkumarasivam</footer>
-      </blockquote>
+        <p class="quote-author">&mdash; Shakthi Shree Gurumurthy Senthilkumarasivam</p>
+      </div>
 
-      <blockquote class="member-quote" lang="und">
+      <div class="member-quote" lang="dv">
         <p>"ނުރޯ ތުއްތު ކުއްޖަކަށް ކިރު ނުލިބެއެވެ"</p>
         <p class="translation">English: A baby that doesn't cry doesn't get milk</p>
-        <footer>&mdash; Adam Nadeem</footer>
-      </blockquote>
+        <p class="quote-author">&mdash; Adam Nadeem</p>
+      </div>
 
-      <blockquote class="member-quote" lang="und">
+      <div class="member-quote" lang="si">
         <p>"සද්දෙ නැතුව ගේම ගහපන්"</p>
         <p class="translation">English: Play the game in absolute silence.</p>
-        <footer>&mdash; Krishaga Hasithya</footer>
-      </blockquote>
+        <p class="quote-author">&mdash; Krishaga Hasithya</p>
+      </div>
     </section>
 
-    <!-- Group photo: replace src once you have the real file (<300KB) -->
-    <section aria-labelledby="photo-heading">
-      <h2 id="photo-heading">Meet the Team</h2>
+    <!-- Group photo -->
+    <section>
+      <h2>Meet the Team</h2>
       <figure class="team-figure">
         <img class="team-photo" src="images/team-photo.jpg"
              alt="The IRONGATE team members standing together">
@@ -89,8 +101,8 @@
     </section>
 
     <!-- Fun facts table -->
-    <section aria-labelledby="facts-heading">
-      <h2 id="facts-heading">Fun Facts</h2>
+    <section>
+      <h2>Fun Facts</h2>
       <table class="fun-facts">
         <caption>A few things you might not know about the team</caption>
         <thead>
@@ -109,8 +121,7 @@
             <td>I used to do henna art and even turned it into a little side hustle!</td>
           </tr>
           <tr>
-            <!-- Inline CSS example: a small, limited,
-                 one-off style applied directly to an element -->
+            <!-- Inline CSS example -->
             <td style="font-weight: 600;">Adam Nadeem</td>
             <td>I enjoy fishing and I play basketball a lot!</td>
           </tr>
