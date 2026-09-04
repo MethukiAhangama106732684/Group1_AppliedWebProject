@@ -38,7 +38,7 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-/* -------------------- Header / navigation -------------------- */
+/*  Header / navigation */
 header {
   display: flex;
   justify-content: space-between;
@@ -67,14 +67,14 @@ nav a:hover {
   color: #1fb6a4;
 }
 
-/* -------------------- about.html: hero section -------------------- */
+/* about.html: hero section  */
 .about-hero {
   background-color: #f4f7f7;
   padding: 2rem 1.5rem;
   border-left: 4px solid #1fb6a4;
 }
 
-/* -------------------- about.html: student IDs -------------------- */
+/* about.html: 106207739  */
 /* Class selector used consistently wherever a student ID appears */
 .student-id {
   font-family: monospace;
@@ -84,7 +84,7 @@ nav a:hover {
   border-radius: 3px;
 }
 
-/* -------------------- about.html: contributions list -------------------- */
+/* about.html: contributions list */
 dl.contributions dt {
   font-weight: bold;
   margin-top: 0.75rem;
@@ -94,7 +94,7 @@ dl.contributions dd {
   margin-left: 1rem;
 }
 
-/* -------------------- about.html: member quotes -------------------- */
+/* about.html: member quotes */
 .member-quote {
   border-left: 3px solid #1fb6a4;
   margin: 1rem 0;
@@ -113,7 +113,7 @@ dl.contributions dd {
   margin-top: 0.3rem;
 }
 
-/* -------------------- about.html: group figure -------------------- */
+/* about.html: group figure */
 figure.team-figure {
   margin: 1rem 0;
 }
@@ -133,7 +133,7 @@ figure.team-figure figcaption {
   color: #4a4a4a;
 }
 
-/* -------------------- about.html: fun facts table -------------------- */
+/* about.html: fun facts table */
 table.fun-facts {
   border-collapse: collapse;
   width: 100%;
@@ -168,7 +168,7 @@ table.fun-facts tbody tr:nth-child(even) {
   background-color: #fafafa;
 }
 
-/* -------------------- Footer -------------------- */
+/* Footer  */
 footer {
   text-align: center;
   padding: 1rem;
@@ -177,10 +177,7 @@ footer {
   margin-top: 2rem;
 }
 
-/* =========================================================
-   RESPONSIVE LAYOUT
-   Stack the header/nav and shrink spacing on small screens
-   ========================================================= */
+/* RESPONSIVE LAYOUT: Stack the header/nav and shrink spacing on small screens*/
 @media (max-width: 600px) {
   header {
     flex-direction: column;
@@ -200,8 +197,7 @@ footer {
     max-width: 100%;
   }
 
-  /* Let the fun facts table scroll horizontally instead of
-     squashing on narrow screens */
+  /* Let the fun facts table scroll horizontally instead of squashing on narrow screens */
   table.fun-facts {
     display: block;
     overflow-x: auto;
