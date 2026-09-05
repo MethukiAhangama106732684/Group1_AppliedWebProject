@@ -1,0 +1,106 @@
+/*
+
+filename: [apply.css]
+
+author: [Shakthi Shree]
+
+created: [04/09/2026]
+
+last modified: [04/09/2026]
+
+description: [apply.html page styling]
+
+*/
+nav {
+    background-color: #5e17eb;
+    justify-content: space-evenly;
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+}
+
+nav a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 12px 25px;
+    border: 10px solid #5170ff;
+    border-radius: 0px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #5170ff;
+    border-color: black;
+}
+
+nav a:active {
+    background-color: white;
+    color: black;
+}
+/*This code resets the default browser spacing and makes element sizing easier to control.*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+/*This code sets the font family for the entire page to Arial, with a fallback to sans-serif fonts.*/
+body{
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #05070d;
+    line-height: 1.6;
+}
+/*This code styles the header section of the page, including background color, text color, padding, and text alignment.*/
+header{
+    background-color: #05070d;
+    color: #ffffff;
+    padding: 35px 8%;
+    border-bottom: 2px solid #5170ff;
+    position: relative;
+    overflow: hidden;
+}
+
+/*Make the paragraph in my header slightly separated from the heading, light blue-grey, normal-sized, and ensure it appears above the decorative background effects*/
+header p {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+/*Footer styleing: dark background, white text, padding, centered text.*/
+footer{
+    background-color:#05070d;
+    color:#ffffff;
+    padding: 15px;
+    text-align: center;
+}
+footer a{
+    color:#5170ff;
+}
+footer a:hover{
+    color:#ffffff;
+}
+/*Logo styling: position the logo in the header, set its size, and ensure it appears above the decorative background effects.*/
+
+header {
+    position: relative;
+    background: #030407;
+    padding: 30px 8%;
+    border-bottom: 2px solid #155cff;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    right: 8%;
+    width: 80px;
+    height: auto;
+}
+
+
+
