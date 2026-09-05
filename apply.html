@@ -24,40 +24,26 @@ skills required."
     <title>IRONGATE Cybersecurity - Apply</title>
     <!---link to external CSS stylesheet for styling the page-->
     <link rel="stylesheet" href="styles/apply.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <!---embedded CSS for additional styling -->
-    <style>
-        /* Add any additional styles here */
-    
-    /* Page-specific styling */
-    section > h2 {
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
 
-    section > p {
-        border-left: 4px solid #5170ff;
-        border-right: 4px solid #5170ff;
-        padding: 10px;
-    }
-
-    
-    </style>
-    
     </head>
     <body>
         <header>
-             <img src="IrongateLOGO.png" alt="IRONGATE Cybersecurity logo" class="logo">
+            <img src="IrongateLOGO.png" alt="IRONGATE Cybersecurity logo" class="logo">
+            <div class="header-content"></div>
             <h1>IRONGATE Cybersecurity</h1>
-            <p>We provide top-notch cybersecurity services to protect your digital assets.</p>
-        </header>
+            
+       
         <nav>
             <a href="index.html">Home</a>
             <a href="jobs.html">Jobs</a>
             <a href="apply.html">Apply Here</a>
             <a href="about.html">About the Team</a>
         </nav>
+        </header>
         <main>
-            <section>
+            <section id="application-form">
                 <h2 style="color:#5e17eb; ;">Job Application</h2>
                 <p>Please fill out the form below to apply for a position at our company.</p>
                 <!-- Application form would go here -->
@@ -107,10 +93,8 @@ skills required."
                         <!-- Form fields for street address, suburb/town, state, and postcode -->
                         <label for="street">Street Address:</label>
                         <input type="text" id="street" name="street" maxlength="40" required>
-                        <br><br>
                         <label for="suburb/town">Suburb/Town:</label>
                         <input type="text" id="suburb/town" name="suburb/town" maxlength="40" required>
-                        <br><br>
                         <label for="state">State:</label>
                         <select id="state" name="state" required>
                             <option value="">Select a state</option>
@@ -123,7 +107,6 @@ skills required."
                             <option value="NT">NT</option>
                             <option value="ACT">ACT</option>
                         </select>
-                        <br><br>
                         <label for="postcode">Postcode:</label>
                         <input type="text" id="postcode" name="postcode" pattern="[0-9]{4}" maxlength="4" required>
                     </fieldset>
@@ -140,7 +123,6 @@ skills required."
                             <option value="incident_response_consultant">Incident Response Consultant</option>
                             <option value="cybersecurity_ux_ui_designer">Cybersecurity UX/UI Designer</option>
                         </select>
-                        <br><br>
                         <label for="employment_type">Employment Type:</label>
                         <select id="employment_type" name="employment_type" required>
                             <option value="">Select employment type</option>
@@ -157,7 +139,6 @@ skills required."
                         <legend>Contact Information</legend>
                         <label for="phone">Phone Number:</label>
                         <input type="tel" id="phone" name="phone" pattern="[0-9]{8,12}" maxlength="12" required>
-                        <br><br>
                         <label for="email">Email Address:</label>
                         <input type="email" id="email" name="email" placeholder="example@domain.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                     </fieldset>
@@ -167,10 +148,8 @@ skills required."
                         <legend>Resume Upload</legend>
                         <label for="resume">Upload your resume (PDF, DOC, DOCX):</label>
                         <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
-                        <br><br>
                         <label for="cover_letter">Upload your cover letter (PDF, DOC, DOCX):</label>
                         <input type="file" id="cover_letter" name="cover_letter" accept=".pdf,.doc,.docx">
-                        <br><br>
                         <label for="others">Upload any relevant certifications (PDF, DOC, DOCX):</label>
                         <input type="file" id="others" name="others" accept=".pdf,.doc,.docx">
                     </fieldset>
@@ -180,21 +159,21 @@ skills required."
                         <legend>Skills</legend>
                         <p>Select all that apply:</p>
                         <label for="skills">Please list your relevant skills:</label>
-                        <input type="checkbox" id="skills" name="skills[]" value="network_security" required>
+                        <input type="checkbox" id="network-security" name="skills[]" value="network_security" required>
                         <label for="skills">Network Security</label>
-                        <input type="checkbox" id="skills" name="skills[]" value="penetration_testing">
+                        <input type="checkbox" id="penetration-testing" name="skills[]" value="penetration_testing">
                         <label for="skills">Penetration Testing</label>
-                        <input type="checkbox" id="skills" name="skills[]" value="incident_response">
+                        <input type="checkbox" id="incident-response" name="skills[]" value="incident_response">
                         <label for="skills">Incident Response</label>
-                        <input type="checkbox" id="skills" name="skills[]" value="malware_analysis">
+                        <input type="checkbox" id="malware-analysis" name="skills[]" value="malware_analysis">
                         <label for="skills">Malware Analysis</label>
-                        <input type="checkbox" id="skills" name="skills[]" value=" digital_forensics">
+                        <input type="checkbox" id="digital-forensics" name="skills[]" value=" digital_forensics">
                         <label for="skills"> Digital Forensics</label>
-                        <input type="checkbox" id="skills" name="skills[]" value="Vulnerability_Assessment">
+                        <input type="checkbox" id="vulnerability-assessment" name="skills[]" value="Vulnerability_Assessment">
                         <label for="skills">Vulnerability Assessment</label>
-                        <input type="checkbox" id="skills" name="skills[]" value="Cloud_Security">
+                        <input type="checkbox" id="cloud-security" name="skills[]" value="Cloud_Security">
                         <label for="skills">Cloud Security</label>
-                        <input type="checkbox" id="skills" name="skills[]" value="Problem_Solving & Analytical_Thinking">
+                        <input type="checkbox" id="problem-solving-analytical-thinking" name="skills[]" value="Problem_Solving & Analytical_Thinking">
                         <label for="skills">Problem Solving & Analytical Thinking</label>
                         <br><br>
                         <label for="other_skills">Other Skills:</label>
@@ -205,16 +184,16 @@ skills required."
                         <!--Form Fields for Education-->
                         <legend>Education</legend>
                         <label for="education">Please list your educational background:</label>
-                        <br><br>
+                        <br>
                         <label for="highest_degree">Highest Degree Obtained:</label>
                         <input type="text" id="highest_degree" name="highest_degree" maxlength="50" required>
-                        <br><br>
+                        
                         <label for="institution">Institution:</label>
                         <input type="text" id="institution" name="institution" maxlength="100" required>
-                        <br><br>
+                        
                         <label for="graduation_year">Year of Graduation:</label>
                         <input type="text" id="graduation_year" name="graduation_year" pattern="[0-9]{4}" maxlength="4" required>
-                        <br><br>
+                        
                         <label for="additional_education">Additional Education or Certifications:</label>
                         <textarea type="text" id="additional_education" name="additional_education" placeholder="Please list any additional education or certifications..." rows="4" cols="50"></textarea>
                     </fieldset>
@@ -237,11 +216,13 @@ skills required."
                     </fieldset>
                     <br><br>
                     <!-- Form buttons -->
-                    <button type="button">Save</button>
-                    <button type="button">Close</button>
-                    <button type="reset">Reset</button>
-                    <button type="submit">Submit</button>
-            </section>
+                    <section class="form-buttons">
+                        <button type="button">Save</button>
+                        <button type="button">Close</button>
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </section>
+                </form>
         </main>
             <!-- Displays copyright text and links to Jira, GitHub and email -->
         <footer>
@@ -254,7 +235,7 @@ skills required."
                 <a href="https://github.com/MethukiAhangama106732684/Group1_AppliedWebProject" target="_blank"
                     rel="noopener">GitHub Repository</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="mailto:106506892@student.swin.edu.au">106506892@student.swin.edu.au</a>
+                <a href="mailto:106506892@student.swin.edu.au">Email us</a>
             </p>
         </footer>
     </body>
