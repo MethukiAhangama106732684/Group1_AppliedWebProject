@@ -1,3 +1,15 @@
+@media (max-width: 700px) {
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    
+}
+
 
 footer {
     background-color: #0d0d0d;
