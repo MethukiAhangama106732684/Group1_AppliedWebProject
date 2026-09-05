@@ -1,0 +1,417 @@
+/*
+
+filename: [apply.css]
+
+author: [Shakthi Shree]
+
+created: [04/09/2026]
+
+last modified: [05/09/2026]
+
+description: [apply.html page styling]
+
+*/
+/* Resets default browser spacing and makes element sizing
+   easier to control throughout the webpage.*/
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Sets smooth scrolling and the website's default font,
+   background colour, text colour, and line spacing. */
+html {
+scroll-behavior: smooth;
+}
+body {
+font-family: Arial;
+background: #ffffff;
+color: #111827;
+line-height: 1.6;
+}
+/*header styling*/
+header{
+    
+    background-color: #0d0d0d;
+    padding: 20px 40px;
+   color: white;
+    border-bottom: 3px solid #5170ff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+header h1{
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    white-space: nowrap;
+}
+/*logo and header content styling*/
+.logo{
+    width: 100px;
+    height: auto;
+    background-color: #ffffff;
+    object-fit: contain;
+    padding: 0.2px;
+    border-radius: 30px;
+    flex-shrink: 0;
+}
+.header-content{
+    max-width: 250px;
+}
+/*naviation bar styling*/
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    margin-left: auto;
+    top: 25px;
+    right: 2%;
+}
+nav a{
+    background: white;
+    color: #5e17ef;
+    text-decoration: none;
+    padding: 10px 16px;
+    border: 2px solid #5170ff;
+    border-radius: 5px;
+    font-weight:bold;
+}
+/*pseudo-class selector*/
+nav a:hover{
+    background: #5170ff;
+    color: white;
+}
+nav a:focus{
+    outline: 3px solid #5e17ef;
+    outline-offset: 3px;
+}
+/*attribute selector*/
+a[href^="https"]{
+    text-decoration: underline;
+}
+/*main styling*/
+/* Styles each form fieldset with a border, rounded corners,
+   spacing, and a light background. */
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 20px;
+    background: white;
+}
+section{
+    width: 100%;
+}
+section h2{
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color:#5170ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+section p{
+    text-align: left;
+    color: #5e17eb;
+    margin-bottom: 25px;
+    padding: 10px;
+    border-left: 4px solid #5170ff;
+    border-right: 4px solid #5170ff;
+}
+/* form stylings*/
+form{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+ form > fieldset{
+    min-width: 0;
+    width: 100%;
+    border : 1px solid #94a3b8;
+    border-radius: 8px;
+    padding: 20px;
+    background: #f8fafc;
+ }
+ /*full-width fieldsets-Makes selected form sections span across both columns
+   of the two-column form layout. */
+
+/* **Acknowledgement:** Used ChatGPT to find out how to make selected sections of form span the full width of the form.
+**Prompt used:** “What can I do in CSS to make selected fieldsets take the full width of the form?”*/
+form > fieldset:nth-of-type(1),
+form > fieldset:nth-of-type(2),
+form > fieldset:nth-of-type(3),
+form > fieldset:nth-of-type(7),
+form > fieldset:nth-of-type(9) {
+    grid-column: 1 / -1;
+}
+/*Legend stylings- Styles the fieldset legends with a purple background,
+   white text, rounded corners, and bold formatting. */
+legend{
+    background:#5e17eb;
+    width: auto;
+    padding: 6px 12px;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight:bold;
+}
+/*label stylings-Styles form labels to appear clearly above their input fields
+   with appropriate spacing and bold text.*/
+label {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #0d0d0d;
+    font-weight: bold;
+}
+/*Form inputs-styles form fields*/
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    background: white;
+    color: #0d0d0d;
+    border: 1px solid #64748b;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+/* Focus pseudo-class */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #5170ff;
+    outline-offset: 2px;
+    border-color: #5e17eb;
+}
+/* Placeholder pseudo-element */
+input::placeholder,
+textarea::placeholder {
+color: #64748b;
+}
+/* Required attribute selector */
+input:required,
+select:required {
+border-left: 4px solid #5170ff;
+}
+/*Gender Fieldset*/
+form > fieldset:nth-of-type(2) > fieldset{
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #94a3b8;
+    border-radius: 5px;
+}
+form > fieldset:nth-of-type(2)> fieldset label{
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+/*stylings for address, position, contact, resume*/
+form > fieldset:nth-of-type(3),
+form > fieldset:nth-of-type(4),
+form > fieldset:nth-of-type(5),
+form > fieldset:nth-of-type(6){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 20px;
+}
+form > fieldset:nth-of-type(3) legend,
+form > fieldset:nth-of-type(4) legend,
+form > fieldset:nth-of-type(5) legend,
+form > fieldset:nth-of-type(6) legend{
+    grid-column: 1/-1;
+}
+/*stylings for checkboxes*/
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+    accent-color: #5170ff;
+}
+input[type="checkbox"] + label {
+    display: inline;
+    margin: 0 20px 0 0;
+    margin-right:15px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    vertical-align:middle;
+}
+/*styling for other skills*/
+#other_skills{
+    min-height: 100px;
+    resize: vertical;
+}
+#job_ref{
+    background: white;
+}
+/*Styling for Education*/
+form > fieldset:nth-of-type(8){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 20px;
+}
+form > fieldset:nth-of-type(8) legend{
+    grid-column: 1/-1;
+}
+form > fieldset:nth-of-type(8) textarea{
+    grid-column: 1/-1;
+}
+/* Stylings for availability*/
+form > fieldset:nth-of-type(9){
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px 15px;
+}
+form > fieldset:nth-of-type(9) legend{
+    width:auto;
+}
+/*stylings for file upload*/
+input[type="file"] {
+cursor: pointer;
+}
+input[type="file"]::file-selector-button {
+background: #5170ff;
+color: white;
+border: none;
+padding: 8px 12px;
+border-radius: 5px;
+cursor: pointer;
+}
+input[type="file"]::file-selector-button:hover {
+background: #5170ff;
+}
+/*stylings for button*/
+button {
+padding: 12px 25px;
+border-radius: 5px;
+font-size: 1rem;
+font-weight: bold;
+cursor: pointer;
+}
+/* Attribute selectors */
+button[type="button"] {
+background: #0d0d0d;
+color: white;
+border: 1px solid #5e17eb;
+}
+button[type="reset"] {
+background: white;
+color: #111827;
+border: 2px solid #5170ff;
+}
+button[type="submit"] {
+background: #5170ff;
+color: white;
+border: 2px solid #5170ff;
+}
+/* Pseudo-class */
+button:hover {
+opacity: 0.85;
+}
+/* Keyboard focus */
+button:focus {
+outline: 3px solid white;
+outline-offset: 3px;
+}
+form > section{
+    grid-column: 1/-1;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*reponsive design*/
+/*Acknowledgement:ChatGPT was used to assist with implementing responsive design for different screen sizes.
+Prompt used:“Create responsive CSS for my webpage that adapts the form, navigation, and header layout for tablet and mobile screen sizes.”*/
+
+@media (max-width: 850px) {
+form {
+    grid-template-columns: 1fr;
+}
+
+form > fieldset:nth-of-type(1),
+form > fieldset:nth-of-type(2),
+form > fieldset:nth-of-type(7) {
+    grid-column: auto;
+}
+
+form > fieldset:nth-of-type(3),
+form > fieldset:nth-of-type(4),
+form > fieldset:nth-of-type(5),
+form > fieldset:nth-of-type(6),
+form > fieldset:nth-of-type(8) {
+    grid-template-columns: 1fr;
+}
+
+nav {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+}
+}
+/* Mobile */
+@media (max-width: 600px) {
+header {
+    text-align: center;
+    padding: 20px 15px;
+}
+
+.logo {
+    margin: 0 auto 10px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    flex-direction: column;
+    width: 100%;
+}
+
+nav a {
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    padding: 25px 12px;
+}
+
+section > h2 {
+    font-size: 1.6rem;
+}
+
+form > fieldset {
+    padding: 15px;
+}
+
+button {
+    width: 100%;
+}
+}
+@media (max-width: 850px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+
+
