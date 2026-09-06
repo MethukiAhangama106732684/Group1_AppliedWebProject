@@ -1,0 +1,169 @@
+/*
+filename: styles.css
+author: Adam Nadeem
+created: 1/09/2026
+last modified: 4/09/2026
+description: Main stylesheet for the IRONGATE Cybersecurity website
+*/
+
+/* Colour theme used throughout the website */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0d0d0d;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Prevent images from overflowing their containing element */
+img {
+    max-width: 100%;
+}
+
+/* Header section styles used across all pages */
+header {
+    background-color: #f4f2ff;
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Aligns the logo and website heading above the navigation */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+/* Controls the size and spacing of the website heading */
+header h1 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+/* Controls the size of the website logo */
+.logo {
+    height: 50px;
+}
+
+/* Separates the navigation menu from the header content */
+nav {
+    border-top: 1px solid #333333;
+    padding-top: 10px;
+}
+
+/* Navigation link styles */
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Highlights navigation links when hovered or on the current page */
+nav a:hover,
+nav a[aria-current="page"] {
+    color: #5170ff;
+    text-decoration: underline;
+}
+
+/* Hero section styles used on index.html */
+.hero {
+    background-image: linear-gradient(120deg, #5e17eb, #5170ff);
+    color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Controls the size of the hero section icon */
+.hero-icon {
+    font-size: 4rem;
+}
+
+/* Limits the width of the hero section text */
+.hero-text {
+    max-width: 600px;
+}
+
+/* Emphasises the website slogan */
+.slogan {
+    font-size: 1.2rem;
+}
+
+/* Hero section link styles */
+.hero a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Table layout and spacing styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Table caption styles */
+caption {
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+/* Table header and cell styles */
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styles the table header row */
+thead th {
+    background-color: #5170ff;
+    color: #ffffff;
+}
+
+/* Styles the table footer row */
+tfoot th {
+    background-color: #f4f2ff;
+    text-align: center;
+}
+
+/* Footer section styles used across all pages */
+footer {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Footer link styles */
+footer a {
+    color: #5170ff;
+}
+
+/* Changes footer links to white when hovered */
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Responsive styles for screens smaller than 700px (ai was used to help make this sections)*/
+@media (max-width: 700px) {
+
+    /* Stacks the header content vertically on small screens */
+    .header-top {
+        flex-direction: column;
+    }
+
+    /* Stacks and centres the hero content on small screens */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+}
