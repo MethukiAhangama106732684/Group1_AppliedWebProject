@@ -1,7 +1,7 @@
 /* for flexibility with different screens - AI was used in this section with the prompt "what are some accessibility feautres we could add? */
 
 @media (max-width: 700px) {
-    .nav-left {
+    #nav-left {
         flex-direction: column;
     }
 }
@@ -112,6 +112,8 @@ nav {
     color: #5e17eb;
 }
 
+/* Navigation bar ends here */
+
 
 #positions {
     grid-column: 1;
@@ -136,8 +138,8 @@ nav {
     padding: 20px;
     box-sizing: border-box;
     border-bottom: solid #5e17eb;
-
 }
+
 .reporting-line {
     display: none;
     text-align: center;
