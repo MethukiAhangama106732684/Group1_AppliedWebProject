@@ -6,7 +6,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #10161c;
+  color: black;
   margin: 0;
   padding: 0;
 }
@@ -34,7 +34,7 @@ button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 3px solid #1fb6a4;
+  outline: 3px solid #5e17eb;
   outline-offset: 2px;
 }
 
@@ -43,7 +43,7 @@ textarea:focus {
 .about-hero {
   background-color: #f4f7f7;
   padding: 2rem 1.5rem;
-  border-left: 4px solid #1fb6a4;
+  border-left: 4px solid #5170ff;
 }
 
 /* about.html: 106207739  */
@@ -51,7 +51,7 @@ textarea:focus {
 .student-id {
   font-family: monospace;
   background-color: #e7f6f4;
-  color: #0f6d63;
+  color: #5e17eb;
   padding: 0.1rem 0.4rem;
   border-radius: 3px;
 }
@@ -68,14 +68,14 @@ dl.contributions dd {
 
 /* about.html: member quotes */
 .member-quote {
-  border-left: 3px solid #1fb6a4;
+  border-left: 3px solid #5170ff;
   margin: 1rem 0;
   padding: 0.5rem 1rem;
   background-color: #f4f7f7;
 }
 
 .member-quote .translation {
-  color: #555555;
+  color: #5e17eb;
   font-size: 0.95rem;
   margin-top: 0.3rem;
 }
@@ -94,7 +94,7 @@ figure.team-figure {
   max-width: 480px;
   width: 100%;
   height: auto;
-  border: 3px solid #1fb6a4;
+  border: 3px solid #5e17eb;
   border-radius: 6px;
   display: block;
 }
@@ -126,7 +126,7 @@ table.fun-facts td {
 }
 
 table.fun-facts th {
-  background-color: #1fb6a4;
+  background-color: #5e17eb;
   color: #ffffff;
 }
 
