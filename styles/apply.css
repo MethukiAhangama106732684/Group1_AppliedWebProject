@@ -6,7 +6,7 @@ author: [Shakthi Shree]
 
 created: [04/09/2026]
 
-last modified: [05/09/2026]
+last modified: [06/09/2026]
 
 description: [apply.html page styling]
 
@@ -24,14 +24,24 @@ html {
 scroll-behavior: smooth;
 }
 body {
-font: Arial;
+font-family: Arial !important, sans-serif;
 background: #ffffff;
 color: #111827;
 line-height: 1.6;
 }
+html,body{
+    margin: 0;
+    padding: 4px;
+    background-color: white;
+}
+hr {
+    border: none;
+    border-top: 1px solid #999;
+    margin-top: 8px;
+}
 /*header styling*/
 header{
-    
+    justify-content: flex-start;
     background-color: #0d0d0d;
     padding: 20px 40px;
    color: white;
@@ -70,6 +80,7 @@ nav {
     margin-left: auto;
     top: 25px;
     right: 2%;
+    
 }
 nav a{
     background: white;
@@ -93,6 +104,7 @@ nav a:focus{
 a[href^="https"]{
     text-decoration: underline;
 }
+
 /*main styling*/
 /* Styles each form fieldset with a border, rounded corners,
    spacing, and a light background. */
@@ -220,8 +232,9 @@ form > fieldset:nth-of-type(4),
 form > fieldset:nth-of-type(5),
 form > fieldset:nth-of-type(6){
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px 20px;
+    grid-template-columns: 180px 1fr;
+    gap: 10px 15px;
+    align-items: center;
 }
 form > fieldset:nth-of-type(3) legend,
 form > fieldset:nth-of-type(4) legend,
@@ -322,7 +335,7 @@ button:focus {
 outline: 3px solid white;
 outline-offset: 3px;
 }
-form > section{
+.form-buttons{
     grid-column: 1/-1;
     display: flex;
     gap: 12px;
