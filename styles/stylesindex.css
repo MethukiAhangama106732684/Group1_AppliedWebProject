@@ -27,7 +27,7 @@ header {
     text-align: center;
 }
 
-/* Aligns the logo and website heading above the navigation */
+/* Aligns the logo and website heading above the navigation bar */
 .header-top {
     display: flex;
     align-items: center;
