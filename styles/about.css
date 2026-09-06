@@ -38,34 +38,6 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-/*  Header / navigation */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #10161c;
-  padding: 1rem 1.5rem;
-}
-
-header .logo {
-  color: #ffffff;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-/* Descendant selector: links specifically inside nav */
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 1.2rem;
-  padding: 0.4rem 0.2rem;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: #1fb6a4;
-}
 
 /* about.html: hero section  */
 .about-hero {

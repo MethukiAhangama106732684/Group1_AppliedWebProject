@@ -24,7 +24,7 @@ html {
 scroll-behavior: smooth;
 }
 body {
-font-family: Arial;
+font: Arial;
 background: #ffffff;
 color: #111827;
 line-height: 1.6;
