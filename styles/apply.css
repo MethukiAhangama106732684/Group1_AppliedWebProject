@@ -255,13 +255,7 @@ button:focus {
 outline: 3px solid white;
 outline-offset: 3px;
 }
-.form-buttons{
-    grid-column: 1/-1;
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 /*reponsive design*/
 /*Acknowledgement:ChatGPT was used to assist with implementing responsive design for different screen sizes.
 Prompt used:“Create responsive CSS for my webpage that adapts the form, navigation, and header layout for tablet and mobile screen sizes.”*/
