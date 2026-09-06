@@ -9,70 +9,7 @@
 
      
 }
-/*header styling*/
-header{
-    justify-content: flex-start;
-    background-color: #0d0d0d;
-    padding: 20px 40px;
-   color: white;
-    border-bottom: 3px solid #5170ff;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
-}
-header h1{
-    font-size: 2rem;
-    color: white;
-    margin: 0;
-    white-space: nowrap;
-}
-/*logo and header content styling*/
-.logo{
-    width: 100px;
-    height: auto;
-    background-color: #ffffff;
-    object-fit: contain;
-    padding: 0.2px;
-    border-radius: 30px;
-    flex-shrink: 0;
-}
-.header-content{
-    max-width: 250px;
-}
-/*naviation bar styling*/
-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 12px;
-    position: absolute;
-    margin-left: auto;
-    top: 25px;
-    right: 2%;
-}
-nav a{
-    background: white;
-    color: #5e17ef;
-    text-decoration: none;
-    padding: 10px 16px;
-    border: 2px solid #5170ff;
-    border-radius: 5px;
-    font-weight:bold;
-}
-/*pseudo-class selector*/
-nav a:hover{
-    background: #5170ff;
-    color: white;
-}
-nav a:focus{
-    outline: 3px solid #5e17ef;
-    outline-offset: 3px;
-}
-/*attribute selector*/
-a[href^="https"]{
-    text-decoration: underline;
-}
+
 
 footer {
     background-color: #0d0d0d;
@@ -89,36 +26,5 @@ footer a:hover {
     color: #ffffff;
 
 }
-@media (max-width: 700px) {
 
-    header {
-        padding: 15px 20px;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .logo {
-        width: 60px;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    nav {
-        position: static;
-        width: 100%;
-        margin-left: 0;
-        justify-content: flex-start;
-        overflow-x: auto;
-        gap: 8px;
-        padding-top: 5px;
-    }
-
-    nav a {
-        padding: 8px 12px;
-        font-size: 14px;
-        flex-shrink: 0;
-    }
-}
 
