@@ -6,7 +6,7 @@ author: [Shakthi Shree]
 
 created: [04/09/2026]
 
-last modified: [06/09/2026]
+last modified: [07/09/2026]
 
 description: [apply.html page styling]
 
@@ -40,7 +40,7 @@ section{
 section h2{
     text-align: left;
     margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 2.8rem;
     color:#5170ff;
     text-transform: uppercase;
     letter-spacing: 1px;
