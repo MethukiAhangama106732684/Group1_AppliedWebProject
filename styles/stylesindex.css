@@ -15,14 +15,7 @@ img {
 }
 
 /* Aligns the logo and website heading above the navigation bar */
-.header-top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-}
+
 
 /* Hero section styles used on index.html */
 .hero {

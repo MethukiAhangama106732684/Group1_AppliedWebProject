@@ -1,3 +1,118 @@
+
+/* CSS for jobs.html starts here */
+
+/*
+
+filename: [jobs.css]
+
+author: [Methuki Ahangama]
+
+created: [04/09/2026]
+
+last modified: [10/09/2026]
+
+description: [CSS specifically for jobs.html]
+
+*/
+
+#positions {
+    grid-column: 1;
+}
+
+#jobs-intro {
+    background-color: #f4f2ff;
+    border: solid #5170ff;
+    height: auto;
+    padding: 10px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    grid-column: 1 / 3;
+    box-sizing: border-box;
+}
+
+#jobs-intro h2 {
+    padding: 50px 10px 0px 10px;
+}
+
+.position-brief-intro {
+    min-height: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: solid #5e17eb;
+}
+
+.reporting-line {
+    display: absolute;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.more-info {
+    display: absolute;
+    width: 100%;
+    background-color: #f4f2ff;
+    padding: 10px 20px 20px 20px;
+    box-sizing: border-box;
+    border: 2px solid #5e17eb;
+    border-radius: 10px;
+    margin-top: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+/* Show BOTH when hovering over the position */
+#positions li:hover .reporting-line,
+#positions li:hover .more-info {
+    display: block;
+}
+
+/* Aside */
+
+#aside {
+    grid-column: 2;
+    grid-row: 2;
+
+    width: 280px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-color: #f4f2ff;
+    border: 2px solid #5170ff ;
+    border-radius: 10px;
+
+    height: fit-content;
+
+    position: sticky;
+    top: 80px;
+}
+#aside #apply-link {
+    display: inline-block;
+    padding: 10px 20px;
+
+    background-color: #5e17eb;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+
+    border-radius: 5px;
+}
+
+#aside #apply-link:hover {
+    background-color: #4810c4;
+}
+#aside h2 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+/* CSS for jobs.html ends here */
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* CSS for apply.html starts here */
+
 /*
 
 filename: [apply.css]
@@ -13,7 +128,7 @@ description: [apply.html page styling]
 */
 /* Resets default browser spacing and makes element sizing
    easier to control throughout the webpage.*/
- *{
+   *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -314,10 +429,6 @@ nav {
 }
 /* Mobile */
 @media (max-width: 600px) {
-header {
-    text-align: center;
-    padding: 20px 15px;
-}
 
 .logo {
     margin: 0 auto 10px;
@@ -327,15 +438,6 @@ header h1 {
     font-size: 1.5rem;
 }
 
-nav {
-    flex-direction: column;
-    width: 100%;
-}
-
-nav a {
-    width: 100%;
-    text-align: center;
-}
 
 main {
     padding: 25px 12px;
@@ -361,3 +463,158 @@ button {
         flex-direction: column;
     }
 }
+
+/* CSS for apply.html ends here */
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* CSS for about.html starts here */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+  }
+  
+  
+  /* -------------------- Accessibility: focus -------------------- */
+  /* Never remove focus outlines - keyboard users rely on this */
+  a:focus,
+  button:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: 3px solid #5e17eb;
+    outline-offset: 2px;
+  }
+  
+  
+  /* about.html: hero section  */
+  .about-hero {
+    background-color: #f4f7f7;
+    padding: 2rem 1.5rem;
+    border-left: 4px solid #5170ff;
+  }
+  
+  /* about.html: 106207739  */
+  /* Class selector used consistently wherever a student ID appears */
+  .student-id {
+    font-family: monospace;
+    background-color: #e7f6f4;
+    color: #5e17eb;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+  }
+  
+  /* about.html: contributions list */
+  dl.contributions dt {
+    font-weight: bold;
+    margin-top: 0.75rem;
+  }
+  
+  dl.contributions dd {
+    margin-left: 1rem;
+  }
+  
+  /* about.html: member quotes */
+  .member-quote {
+    border-left: 3px solid #5170ff;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #f4f7f7;
+  }
+  
+  .member-quote .translation {
+    color: #5e17eb;
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+  }
+  
+  .member-quote .quote-author {
+    font-weight: bold;
+    margin-top: 0.3rem;
+  }
+  
+  /* about.html: group figure */
+  figure.team-figure {
+    margin: 1rem 0;
+  }
+  
+  .team-photo {
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    border: 3px solid #5e17eb;
+    border-radius: 6px;
+    display: block;
+  }
+  
+  figure.team-figure figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #4a4a4a;
+  }
+  
+  /* about.html: fun facts table */
+  table.fun-facts {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+  
+  table.fun-facts caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  table.fun-facts th,
+  table.fun-facts td {
+    border: 1px solid #cccccc;
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+  }
+  
+  table.fun-facts th {
+    background-color: #5e17eb;
+    color: #ffffff;
+  }
+  
+  /* Pseudo-class selector: hover effect required by the brief */
+  table.fun-facts tbody tr:hover {
+    background-color: #e7f6f4;
+  }
+  
+  /* nth-child selector: subtle striping for readability, not colour-only cue */
+  table.fun-facts tbody tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  
+  
+  /* RESPONSIVE LAYOUT: Stack the header/nav and shrink spacing on small screens*/
+  @media (max-width: 600px) {
+  
+    main {
+      padding: 1rem;
+    }
+  
+    .team-photo {
+      max-width: 100%;
+    }
+  
+    /* Let the fun facts table scroll horizontally instead of squashing on narrow screens */
+    table.fun-facts {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+
+/* CSS for about.html ends here */
+

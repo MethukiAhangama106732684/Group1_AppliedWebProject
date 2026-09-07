@@ -1,0 +1,530 @@
+/* =========================================================
+   GLOBAL STYLES
+   ========================================================= */
+
+/* Make sizing consistent across the whole website */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    position: relative;
+    background: #030407;
+    padding: 25px 6%;
+    min-height: 150px;
+    border-bottom: 3px solid #155cff;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+header p {
+    margin-top: 5px;
+    color: #d1d5db;
+}
+
+.logo {
+    width: 110px;
+    height: auto;
+    background-color: white;
+    padding: 2px;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.header-content {
+    max-width: 500px;
+}
+
+
+/* =========================================================
+   NAVIGATION BAR
+   ========================================================= */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    top: 25px;
+    right: 2%;
+}
+
+nav a {
+    background: white;
+    color: #5e17ef;
+    text-decoration: none;
+    padding: 10px 16px;
+    border: 2px solid #5170ff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Pseudo-class selector */
+nav a:hover {
+    background: #5170ff;
+    color: white;
+}
+
+nav a:focus {
+    outline: 3px solid #5e17ef;
+    outline-offset: 3px;
+}
+
+/* Attribute selector */
+a[href^="https"] {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #5170ff;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   GENERAL RESPONSIVE SETTINGS
+   ========================================================= */
+
+/* Tablets and medium screens */
+@media (max-width: 900px) {
+
+    header {
+        padding: 25px 5%;
+        min-height: auto;
+    }
+
+    .header-content {
+        max-width: 55%;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        gap: 8px;
+        right: 3%;
+        top: 25px;
+    }
+
+    nav a {
+        padding: 9px 12px;
+        font-size: 0.95rem;
+    }
+
+    .logo {
+        width: 95px;
+    }
+
+    main {
+        width: 95%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* =========================================================
+   MOBILE — 700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* -------------------------
+       GENERAL
+       ------------------------- */
+
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+
+    /* Prevent images from overflowing */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Main content */
+    main {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 15px;
+    }
+
+
+    /* -------------------------
+       HEADINGS
+       ------------------------- */
+
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+
+    /* -------------------------
+       HEADER
+       ------------------------- */
+
+    header {
+        width: 100%;
+        text-align: center;
+        padding: 20px 15px;
+        min-height: auto;
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-content {
+        max-width: 100%;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .logo {
+        width: 90px;
+        margin: 0 auto 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+
+    /* -------------------------
+       NAVIGATION
+       ------------------------- */
+
+    nav {
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+
+    /* -------------------------
+       IMAGES
+       ------------------------- */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* -------------------------
+       TABLES
+       ------------------------- */
+
+    table {
+        max-width: 100%;
+    }
+
+    /*
+       If a table is wider than the phone,
+       it can scroll horizontally instead
+       of breaking the whole page.
+    */
+    .table-container {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+
+    /* -------------------------
+       FORMS
+       ------------------------- */
+
+    form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    input,
+    select,
+    textarea {
+        max-width: 100%;
+    }
+
+
+    /* -------------------------
+       BUTTONS
+       ------------------------- */
+
+    button {
+        max-width: 100%;
+    }
+
+
+    /* -------------------------
+       TEXT
+       ------------------------- */
+
+    p,
+    li,
+    dd,
+    dt {
+        overflow-wrap: break-word;
+    }
+
+
+    /* -------------------------
+       FOOTER
+       ------------------------- */
+
+    footer {
+        width: 100%;
+        padding: 15px 10px;
+        margin-top: 2rem;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    footer a {
+        overflow-wrap: break-word;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES — 480px
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* Main content */
+    main {
+        padding: 15px 12px;
+    }
+
+
+    /* Headings */
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.45rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+
+    /* Header */
+    header {
+        padding: 18px 5%;
+        border-bottom-width: 3px;
+    }
+
+    header h1 {
+        font-size: 1.35rem;
+        line-height: 1.3;
+    }
+
+    header p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+
+    /* Navigation */
+    nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin-top: 18px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 9px 8px;
+        font-size: 0.85rem;
+    }
+
+
+    /* Buttons */
+    button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* Fieldsets */
+    fieldset {
+        max-width: 100%;
+    }
+
+
+    /* Footer */
+    footer {
+        width: 100%;
+        padding: 15px 8px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES — 350px
+   ========================================================= */
+
+@media (max-width: 350px) {
+
+    header {
+        padding: 15px 4%;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    header p {
+        font-size: 0.85rem;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+
+    /* Navigation becomes one column */
+    nav {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+
+    /* Main content */
+    main {
+        padding: 12px 10px;
+    }
+
+
+    /* Headings */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+
+    /* Footer */
+    footer {
+        padding: 12px 8px;
+        font-size: 0.85rem;
+    }
+}
+
+
+/* CSS for global ends here */
+/*-------------------------------------------------------------------------------------------------------------------*/
