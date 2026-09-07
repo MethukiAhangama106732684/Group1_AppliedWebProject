@@ -177,10 +177,10 @@ main{
     padding: 35px 20px;
     background: white;
 }
-.application-form{
+.section-content{
     width: 100%;
 }
-.application-form h2{
+.section-content h2{
     text-align: left;
     margin-bottom: 10px;
     font-size: 2.8rem;
@@ -188,7 +188,7 @@ main{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.application-form p{
+.section-content p{
     text-align: left;
     color: #5e17eb;
     margin-bottom: 25px;
@@ -455,14 +455,7 @@ button {
     width: 100%;
 }
 }
-/* Responsive styles for screens smaller than 700px (ai was used to help make this sections)*/
-@media (max-width: 700px) {
 
-    /* Stacks the header content vertically on small screens */
-    .header-top {
-        flex-direction: column;
-    }
-}
 
 /* CSS for apply.html ends here */
 
