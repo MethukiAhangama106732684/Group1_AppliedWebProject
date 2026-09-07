@@ -86,7 +86,6 @@ legend{
     width: auto;
     padding: 6px 12px;
     color: white;
-    padding: 6px 12px;
     border-radius: 5px;
     font-weight:bold;
 }
@@ -152,7 +151,7 @@ form > fieldset:nth-of-type(4),
 form > fieldset:nth-of-type(5),
 form > fieldset:nth-of-type(6){
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: minmax(130px, auto) 1fr;
     gap: 10px 15px;
     align-items: center;
 }
