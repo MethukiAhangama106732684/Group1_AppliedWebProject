@@ -54,12 +54,13 @@ skills required."
         <hr>
         <main>
             <section id="application-form">
-                <h2 style="color:#5e17eb; ;">Job Application</h2>
+                <h2 style="color:#5e17eb;">Job Application</h2>
                 <p>Please fill out the form below to apply for a position at our company.</p>
                 <!-- Application form would go here -->
                 <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
                     <fieldset>
                         <!--form field for Job reference Number-->
+                        <legend>Personal Information</legend>
                         <label for="job_ref">Job Reference Number:</label>
                         <input type="text" id="job_ref" name="job_ref" pattern="[A-Za-z0-9]{6}" minlength="6" maxlength="6" required>
                     </fieldset>
@@ -69,10 +70,10 @@ skills required."
                         <legend>Personal Information</legend>
                         <!-- Form fields for first name, last name, date of birth -->
                         <label for="firstname">First Name:</label>
-                        <input type="text" id="firstname" name="firstname" pattern="[A-Za-z ]+{2,20}" maxlength="20" placeholder="Please enter your first name" required>
+                        <input type="text" id="firstname" name="firstname" pattern="[A-Za-z ]{2,20}" maxlength="20" placeholder="Please enter your first name" required>
                         <br><br>
                         <label for="lastname">Last Name:</label>
-                        <input type="text" id="lastname" name="lastname" pattern="[A-Za-z ]+{2,20}" maxlength="20" placeholder="Please enter your last name" required>
+                        <input type="text" id="lastname" name="lastname" pattern="[A-Za-z ]{2,20}" maxlength="20" placeholder="Please enter your last name" required>
                         <br><br>
                         <label for="DOB">Date of Birth:</label>
                         <input type="text" id="DOB" name="DOB" placeholder="dd/mm/yyyy" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required>
@@ -103,8 +104,8 @@ skills required."
                         <!-- Form fields for street address, suburb/town, state, and postcode -->
                         <label for="street">Street Address:</label>
                         <input type="text" id="street" name="street" maxlength="40" required>
-                        <label for="suburb/town">Suburb/Town:</label>
-                        <input type="text" id="suburb/town" name="suburb/town" maxlength="40" required>
+                        <label for="suburb_town">Suburb/Town:</label>
+                        <input type="text" id="suburb_town" name="suburb_town" maxlength="40" required>
                         <label for="state">State:</label>
                         <select id="state" name="state" required>
                             <option value="">Select a state</option>
@@ -177,7 +178,7 @@ skills required."
                         <label for="incident-response">Incident Response</label>
                         <input type="checkbox" id="malware-analysis" name="skills[]" value="malware_analysis">
                         <label for="malware-analysis">Malware Analysis</label>
-                        <input type="checkbox" id="digital-forensics" name="skills[]" value=" digital_forensics">
+                        <input type="checkbox" id="digital-forensics" name="skills[]" value="digital_forensics">
                         <label for="digital-forensics"> Digital Forensics</label>
                         <input type="checkbox" id="vulnerability-assessment" name="skills[]" value="Vulnerability_Assessment">
                         <label for="vulnerability-assessment">Vulnerability Assessment</label>
@@ -188,6 +189,7 @@ skills required."
                         <br><br>
                         <label for="other_skills">Other Skills:</label>
                         <textarea id="other_skills" name="other_skills" placeholder="Please list any other relevant skills..." rows="4" cols="50"></textarea>
+                        <p id="skills-error" style="color: red; display: none; font-weight: bold; margin-top: 10px;">Please select at least one skill.</p>
                     </fieldset>
                     <br><br>
                     <fieldset>
@@ -228,8 +230,8 @@ skills required."
                     <!-- Form buttons -->
                     
                     <div class="form-buttons">
-                        <button type="button">Save</button>
-                        <button type="button">Close</button>
+                        <button type="submit" name="action" value="save" class="btn-save">Save</button>
+                        <button type="reset" class="btn-close">Close</button>
                         <button type="reset">Reset</button>
                         <button type="submit">Submit</button>
                     

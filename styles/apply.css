@@ -6,7 +6,7 @@ author: [Shakthi Shree]
 
 created: [04/09/2026]
 
-last modified: [06/09/2026]
+last modified: [07/09/2026]
 
 description: [apply.html page styling]
 
@@ -40,7 +40,7 @@ section{
 section h2{
     text-align: left;
     margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 2.8rem;
     color:#5170ff;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -86,7 +86,6 @@ legend{
     width: auto;
     padding: 6px 12px;
     color: white;
-    padding: 6px 12px;
     border-radius: 5px;
     font-weight:bold;
 }
@@ -152,7 +151,7 @@ form > fieldset:nth-of-type(4),
 form > fieldset:nth-of-type(5),
 form > fieldset:nth-of-type(6){
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: minmax(130px, auto) 1fr;
     gap: 10px 15px;
     align-items: center;
 }
@@ -242,9 +241,9 @@ color: #111827;
 border: 2px solid #5170ff;
 }
 button[type="submit"] {
-background: #5170ff;
+background: #5e17eb;
 color: white;
-border: 2px solid #5170ff;
+border: 2px solid #5e17eb;
 }
 /* Pseudo-class */
 button:hover {
