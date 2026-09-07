@@ -7,12 +7,7 @@ description: Main stylesheet for the IRONGATE Cybersecurity website
 */
 
 /* Colour theme used throughout the website */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0d0d0d;
-    line-height: 1.6;
-    margin: 0;
-}
+
 
 /* Prevent images from overflowing their containing element */
 img {
