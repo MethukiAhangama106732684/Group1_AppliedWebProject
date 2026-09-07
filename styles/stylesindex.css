@@ -109,3 +109,10 @@ tfoot th {
         text-align: center;
     }
 }
+
+/* Styles the table rows on hover */
+th:hover,
+td:hover {
+    background-color: #5e17eb;
+    color: #ffffff;
+}
