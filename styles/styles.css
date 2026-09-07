@@ -110,9 +110,17 @@ footer a:hover {
 }
 
 
-/* =========================
-   RESPONSIVE HEADER
-   ========================= */
+/*
+Acknowledgement:
+Generative AI (ChatGPT) was used to assist with developing
+and improving the responsive header design for different
+screen sizes.
+
+Prompt used:
+"Give a responsive CSS design for this header that works
+properly and consistently across all screen sizes, including
+desktop, tablet, and mobile devices."
+*/
 
 /* Tablets and medium screens */
 @media (max-width: 900px) {
