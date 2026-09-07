@@ -110,7 +110,7 @@ tfoot th {
     }
 }
 
-/* Styles the table rows on hover */
+/* Styles the table rows on hover effect */
 th:hover,
 td:hover {
     background-color: #5e17eb;
