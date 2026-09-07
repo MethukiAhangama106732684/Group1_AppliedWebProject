@@ -121,7 +121,7 @@ nav {
 /* Hover effect */
 #nav-links a:hover {
     background-color: #f3f0ff;
-    color: #5e17eb;
+    color: #5e17eb; 
     box-shadow: 0 2px 4px #5170ff;
 }
 

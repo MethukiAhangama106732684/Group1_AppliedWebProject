@@ -1,32 +1,37 @@
 @media (max-width: 700px) {
     h1 {
-        font-size: 30px;
+        font-size: 3rem;
         padding: 0;
         margin: 0;    
+        font-family: sans-serif;
     }
     
     h2 {
-        font-size: 45px;
+        font-size: 2.8rem;
         padding: 0;
         margin: 0;
+        font-family: sans-serif;
     }
     
     h3 {
-        font-size: 40px;
+        font-size: 2.5rem;
         padding: 0;
         margin: 0;
+        font-family: sans-serif;
     }
     
     h4 {
-        font-size: 20px;
+        font-size: 1.25rem;
         padding: 0;
         margin: 0;
+        font-family: sans-serif;
     }
     
     h5 {
-        font-size: 150px;
+        font-size: 1.1rem;
         padding: 0;
-        margin: 0;    
+        margin: 0; 
+        font-family: sans-serif;   
     }
 
      
