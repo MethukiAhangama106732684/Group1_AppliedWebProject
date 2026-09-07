@@ -177,10 +177,10 @@ main{
     padding: 35px 20px;
     background: white;
 }
-section{
+.application-form{
     width: 100%;
 }
-section h2{
+.application-form h2{
     text-align: left;
     margin-bottom: 10px;
     font-size: 2.8rem;
@@ -188,7 +188,7 @@ section h2{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-section p{
+.application-form p{
     text-align: left;
     color: #5e17eb;
     margin-bottom: 25px;
