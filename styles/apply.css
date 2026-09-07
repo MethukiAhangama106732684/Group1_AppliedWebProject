@@ -6,7 +6,7 @@ author: [Shakthi Shree]
 
 created: [04/09/2026]
 
-last modified: [05/09/2026]
+last modified: [06/09/2026]
 
 description: [apply.html page styling]
 
@@ -23,76 +23,8 @@ description: [apply.html page styling]
 html {
 scroll-behavior: smooth;
 }
-body {
-font: Arial;
-background: #ffffff;
-color: #111827;
-line-height: 1.6;
-}
-/*header styling*/
-header{
-    
-    background-color: #0d0d0d;
-    padding: 20px 40px;
-   color: white;
-    border-bottom: 3px solid #5170ff;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
-}
-header h1{
-    font-size: 2rem;
-    color: white;
-    margin: 0;
-    white-space: nowrap;
-}
-/*logo and header content styling*/
-.logo{
-    width: 100px;
-    height: auto;
-    background-color: #ffffff;
-    object-fit: contain;
-    padding: 0.2px;
-    border-radius: 30px;
-    flex-shrink: 0;
-}
-.header-content{
-    max-width: 250px;
-}
-/*naviation bar styling*/
-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 12px;
-    position: absolute;
-    margin-left: auto;
-    top: 25px;
-    right: 2%;
-}
-nav a{
-    background: white;
-    color: #5e17ef;
-    text-decoration: none;
-    padding: 10px 16px;
-    border: 2px solid #5170ff;
-    border-radius: 5px;
-    font-weight:bold;
-}
-/*pseudo-class selector*/
-nav a:hover{
-    background: #5170ff;
-    color: white;
-}
-nav a:focus{
-    outline: 3px solid #5e17ef;
-    outline-offset: 3px;
-}
-/*attribute selector*/
-a[href^="https"]{
-    text-decoration: underline;
-}
+
+
 /*main styling*/
 /* Styles each form fieldset with a border, rounded corners,
    spacing, and a light background. */
@@ -220,8 +152,9 @@ form > fieldset:nth-of-type(4),
 form > fieldset:nth-of-type(5),
 form > fieldset:nth-of-type(6){
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px 20px;
+    grid-template-columns: 180px 1fr;
+    gap: 10px 15px;
+    align-items: center;
 }
 form > fieldset:nth-of-type(3) legend,
 form > fieldset:nth-of-type(4) legend,
@@ -322,13 +255,7 @@ button:focus {
 outline: 3px solid white;
 outline-offset: 3px;
 }
-form > section{
-    grid-column: 1/-1;
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 /*reponsive design*/
 /*Acknowledgement:ChatGPT was used to assist with implementing responsive design for different screen sizes.
 Prompt used:“Create responsive CSS for my webpage that adapts the form, navigation, and header layout for tablet and mobile screen sizes.”*/
@@ -399,19 +326,11 @@ button {
     width: 100%;
 }
 }
-@media (max-width: 850px) {
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+/* Responsive styles for screens smaller than 700px (ai was used to help make this sections)*/
+@media (max-width: 700px) {
 
-    nav {
-        position: static;
-        width: 100%;
-        justify-content: center;
-        margin-top: 20px;
+    /* Stacks the header content vertically on small screens */
+    .header-top {
+        flex-direction: column;
     }
 }
-
-
-

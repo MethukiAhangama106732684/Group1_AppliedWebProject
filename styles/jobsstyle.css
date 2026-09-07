@@ -1,11 +1,16 @@
 /* for flexibility with different screens - AI was used in this section with the prompt "what are some accessibility feautres we could add? */
 
 @media (max-width: 700px) {
-    .nav-left {
+    #nav-left {
         flex-direction: column;
     }
 }
 
+h1 {
+    font-size: 45px;
+    padding: 0;
+    margin: 0;    
+}
 
 h2 {
     font-size: 80px;
@@ -14,10 +19,24 @@ h2 {
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 60px;
     padding: 0;
     margin: 0;
 }
+
+h4 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+h5 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;    
+}
+
+
 
 /* Navigation bar */
 nav {
@@ -112,6 +131,8 @@ nav {
     color: #5e17eb;
 }
 
+/* Navigation bar ends here */
+
 
 #positions {
     grid-column: 1;
@@ -136,8 +157,8 @@ nav {
     padding: 20px;
     box-sizing: border-box;
     border-bottom: solid #5e17eb;
-
 }
+
 .reporting-line {
     display: none;
     text-align: center;
@@ -158,16 +179,12 @@ nav {
 }
 
 
+
 /* Show BOTH when hovering over the position */
 #positions li:hover .reporting-line,
 #positions li:hover .more-info {
     display: block;
 }
-
-#positions h3 {
-    padding: 0 20px;
-}
-
 
 /* Aside */
 
