@@ -61,10 +61,23 @@ header p {
     margin-bottom: 10px;
 }
 
-.header-content {
-    max-width: 500px;
+#header-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
+#header-brand .logo {
+    width: 110px;
+    height: auto;
+    margin: 0;
+}
+
+#header-brand h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+}
 
 /* =========================================================
    NAVIGATION BAR
@@ -138,10 +151,6 @@ footer a:hover {
     header {
         padding: 25px 5%;
         min-height: auto;
-    }
-
-    .header-content {
-        max-width: 55%;
     }
 
     header h1 {
