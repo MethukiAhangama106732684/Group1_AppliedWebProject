@@ -89,3 +89,9 @@ tbody tr:hover td {
     background-color: #f4f2ff;
     color: #5e17eb;
 }
+
+/* Styles the writing */
+
+h2, caption {
+    padding: 0 10px;
+}

@@ -15,9 +15,8 @@ description: [CSS specifically for jobs.html]
 
 */
 
-#positions {
-    grid-column: 1;
-}
+/* Styling for the intro*/
+
 
 #jobs-intro {
     background-color: #f4f2ff;
@@ -34,21 +33,26 @@ description: [CSS specifically for jobs.html]
     padding: 50px 10px 0px 10px;
 }
 
-.position-brief-intro {
-    min-height: 350px;
-    padding: 20px;
-    box-sizing: border-box;
-    border-bottom: solid #5e17eb;
+/* Styling fof the brief introduction of each position eg. title, reference number, description, salary */
+
+#positions ol {
+  padding-left: 10px;
 }
 
+.position-brief-info {
+  margin-left: 0px; 
+  margin-right: 10px;
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+/* Styling for the extra information */
 .reporting-line {
-    display: absolute;
     padding: 0;
     box-sizing: border-box;
 }
 
 .more-info {
-    display: absolute;
     width: 100%;
     background-color: #f4f2ff;
     padding: 10px 20px 20px 20px;
@@ -59,7 +63,9 @@ description: [CSS specifically for jobs.html]
     grid-template-columns: repeat(3, 1fr);
 }
 
-
+#positions {
+  grid-column: 1;
+}
 
 /* Show BOTH when hovering over the position */
 #positions li:hover .reporting-line,
@@ -67,25 +73,28 @@ description: [CSS specifically for jobs.html]
     display: block;
 }
 
-/* Aside */
+/* styling for the Aside */
 
 #aside {
-    grid-column: 2;
-    grid-row: 2;
+  grid-column: 2;
+  grid-row: 2;
 
-    width: 280px;
-    padding: 20px;
-    box-sizing: border-box;
+  width: 300px;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  background-color: #f4f2ff;
+  border: 2px solid #5170ff;
+  border-radius: 10px;
 
-    background-color: #f4f2ff;
-    border: 2px solid #5170ff ;
-    border-radius: 10px;
 
-    height: fit-content;
+  height: fit-content;
 
-    position: sticky;
-    top: 80px;
+  position: sticky;
+  top: 80px;
+
 }
+
 #aside #apply-link {
     display: inline-block;
     padding: 10px 20px;
@@ -172,12 +181,7 @@ header p {
 /*main styling*/
 /* Styles each form fieldset with a border, rounded corners,
    spacing, and a light background. */
-main{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 35px 20px;
-    background: white;
-}
+
 .section-content{
     width: 100%;
 }
@@ -439,13 +443,6 @@ nav {
   }
   
   
-  main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 1rem 1.5rem;
-  }
-  
-  
   /* -------------------- Accessibility: focus -------------------- */
   /* Never remove focus outlines - keyboard users rely on this */
   a:focus,
@@ -563,10 +560,6 @@ nav {
   
   /* RESPONSIVE LAYOUT: Stack the header/nav and shrink spacing on small screens*/
   @media (max-width: 600px) {
-  
-    main {
-      padding: 1rem;
-    }
   
     .team-photo {
       max-width: 100%;
