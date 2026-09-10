@@ -17,7 +17,7 @@ description: [CSS specifically for jobs.html]
 
 /* Styling for the intro*/
 
-
+/* Styling for the jobs page intro part */
 #jobs-intro {
     background-color: #f4f2ff;
     border: solid #5170ff;
@@ -33,7 +33,7 @@ description: [CSS specifically for jobs.html]
     padding: 50px 10px 0px 10px;
 }
 
-/* Styling fof the brief introduction of each position eg. title, reference number, description, salary */
+
 #positions {
   grid-column: 1;
   margin-left: 30px;
@@ -44,6 +44,7 @@ description: [CSS specifically for jobs.html]
   padding-left: 10px;
 }
 
+/* Styling fof the brief introduction of each position eg. title, reference number, description, salary */
 .position-brief-info {
   margin-left: 0px; 
   margin-right: 10px;
