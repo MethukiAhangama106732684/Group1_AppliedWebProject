@@ -17,7 +17,7 @@ description: [CSS specifically for jobs.html]
 
 /* Styling for the intro*/
 
-
+/* Styling for the jobs page intro part */
 #jobs-intro {
     background-color: #f4f2ff;
     border: solid #5170ff;
@@ -33,12 +33,18 @@ description: [CSS specifically for jobs.html]
     padding: 50px 10px 0px 10px;
 }
 
-/* Styling fof the brief introduction of each position eg. title, reference number, description, salary */
+
+#positions {
+  grid-column: 1;
+  margin-left: 30px;
+}
+
 
 #positions ol {
   padding-left: 10px;
 }
 
+/* Styling fof the brief introduction of each position eg. title, reference number, description, salary */
 .position-brief-info {
   margin-left: 0px; 
   margin-right: 10px;
@@ -48,30 +54,61 @@ description: [CSS specifically for jobs.html]
 
 /* Styling for the extra information */
 .reporting-line {
-    padding: 0;
-    box-sizing: border-box;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .more-info {
-    width: 100%;
-    background-color: #f4f2ff;
-    padding: 10px 20px 20px 20px;
-    box-sizing: border-box;
-    border: 2px solid #5e17eb;
-    border-radius: 10px;
-    margin-top: 15px;
-    grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  background-color: #f4f2ff;
+  padding: 10px 20px 20px 20px;
+  box-sizing: border-box;
+  border: 2px solid #5e17eb;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
-#positions {
-  grid-column: 1;
+
+/* Three-column requirements layout */
+.more-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-/* Show BOTH when hovering over the position */
-#positions li:hover .reporting-line,
-#positions li:hover .more-info {
-    display: block;
+/* Reporting line spans all columns */
+.reporting-line {
+  grid-column: 1 / -1;
 }
+
+/* Each requirements column */
+.key-responsibilities, .essential-requirements, .preferable-requirements {
+  padding: 20px;
+  border: 1px solid #5e17eb;
+  border-radius: 8px;
+  background-color: #f4f2ff;
+}
+
+.key-responsibilities h5, .essential-requirements h5, .preferable-requirements h5 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.key-responsibilities ul, .essential-requirements ul, .preferable-requirements ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.key-responsibilities li, .essential-requirements li, .preferable-requirements li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+
 
 /* styling for the Aside */
 
@@ -147,34 +184,6 @@ description: [apply.html page styling]
    background colour, text colour, and line spacing. */
 html {
   scroll-behavior: smooth;
-}
-
-header {
-  position: relative;
-  background: #030407;
-  padding: 25px 6%;
-  min-height: 150px;
-  border-bottom: 3px solid #155cff;
-}
-
-header h1 {
-  font-size: 2rem;
-  color: white;
-}
-
-header p {
-  margin-top: 5px;
-  color: #d1d5db;
-}
-
-.logo {
-  width: 110px;
-  height: auto;
-  background-color:white;
-  padding: 2px;
-  border-radius: 6px;
-  display: block;
-  margin-bottom: 10px;
 }
 
 
@@ -437,6 +446,19 @@ nav {
 /*-------------------------------------------------------------------------------------------------------------------*/
 
 /* CSS for about.html starts here */
+/*
+
+filename: [about.css]
+
+author: [Krishaga Hasithya]
+
+created: [04/09/2026]
+
+last modified: [10/09/2026]
+
+description: [about.html page styling]
+
+*/
 
 * {
     box-sizing: border-box;
@@ -457,7 +479,7 @@ nav {
   
   /* about.html: hero section  */
   .about-hero {
-    background-color: #f4f7f7;
+    background-color: #f4f4f7;
     padding: 2rem 1.5rem;
     border-left: 4px solid #5170ff;
   }
@@ -466,7 +488,7 @@ nav {
   /* Class selector used consistently wherever a student ID appears */
   .student-id {
     font-family: monospace;
-    background-color: #e7f6f4;
+    background-color: #e7edf6;
     color: #5e17eb;
     padding: 0.1rem 0.4rem;
     border-radius: 3px;
@@ -487,7 +509,7 @@ nav {
     border-left: 3px solid #5170ff;
     margin: 1rem 0;
     padding: 0.5rem 1rem;
-    background-color: #f4f7f7;
+    background-color: #f4f6f7;
   }
   
   .member-quote .translation {
@@ -548,7 +570,7 @@ nav {
   
   /* Pseudo-class selector: hover effect required by the brief */
   table.fun-facts tbody tr:hover {
-    background-color: #e7f6f4;
+    background-color: #e7f2f6;
   }
   
   /* nth-child selector: subtle striping for readability, not colour-only cue */
