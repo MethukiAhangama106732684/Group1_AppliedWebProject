@@ -52,23 +52,22 @@ h5 {
 p, li {
     font-size: 16px;
 }
+
 /* =========================================================
    HEADER
    ========================================================= */
 
-
-
-
 header {
-    position: relative;
     background: #030407;
     padding: 25px 6%;
     border-bottom: 3px solid #155cff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 header h1 {
-    display: flex;
-    align-items: center;
     font-size: 2rem;
     color: white;
 }
@@ -78,13 +77,11 @@ header p {
     color: #d1d5db;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
+.logo {
     width: 50px;
     height: auto;
     background-color: white;
-    padding: 0px;
+    padding: 0;
     border-radius: 6px;
     display: block;
     margin-bottom: 10px;
@@ -102,8 +99,9 @@ header p {
     color: white;
 }
 
+
 /* =========================================================
-   NAVIGATION BAR
+   NAVIGATION
    ========================================================= */
 
 nav {
@@ -111,9 +109,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     gap: 12px;
-    position: absolute;
-    top: 25px;
-    right: 2%;
+    margin-top: 0;
 }
 
 nav a {
@@ -124,22 +120,12 @@ nav a {
     border: 2px solid #5170ff;
     border-radius: 5px;
     font-weight: bold;
+    text-align: center;
 }
 
-/* Pseudo-class selector */
 nav a:hover {
     background: #5170ff;
     color: white;
-}
-
-nav a:focus {
-    outline: 3px solid #5e17ef;
-    outline-offset: 3px;
-}
-
-/* Attribute selector */
-a[href^="https"] {
-    text-decoration: underline;
 }
 
 
@@ -147,7 +133,7 @@ a[href^="https"] {
    FOOTER
    ========================================================= */
 
-footer {
+   footer {
     background-color: #0d0d0d;
     color: #ffffff;
     padding: 15px;
@@ -164,14 +150,40 @@ footer a:hover {
 }
 
 
+
+
+
 /* =========================================================
-   RESPONSIVE / MOBILE STYLES
+   TABLET / SMALL LAPTOP
    ========================================================= */
 
-/* Tablets + phones */
+@media (max-width: 900px) {
+
+    header {
+        padding: 20px 4%;
+    }
+
+    #header-brand {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 9px 12px;
+    }
+}
+
+
+/* =========================================================
+   PHONE
+   ========================================================= */
+
 @media (max-width: 600px) {
 
-    /* GENERAL */
     html,
     body {
         width: 100%;
@@ -198,6 +210,7 @@ footer a:hover {
 
 
     /* HEADINGS */
+
     h1 {
         font-size: 2rem;
         line-height: 1.2;
@@ -223,16 +236,14 @@ footer a:hover {
 
 
     /* HEADER */
+
     header {
         width: 100%;
         padding: 20px 15px;
-        min-height: auto;
-        max-height: none;
         text-align: center;
     }
-    
+
     #header-brand {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -249,38 +260,38 @@ footer a:hover {
 
     .logo {
         width: 80px;
-        height: auto;
         margin: 0 auto 5px;
     }
 
 
     /* NAVIGATION */
+
     nav {
         position: static;
         width: 100%;
         margin-top: 20px;
 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 8px;
     }
 
     nav a {
         width: 100%;
         padding: 10px 8px;
-        text-align: center;
         font-size: 0.9rem;
     }
 
 
     /* FORMS */
+
     form {
         width: 100%;
         max-width: 100%;
     }
 
     fieldset {
+        width: 100%;
         max-width: 100%;
         padding: 15px;
     }
@@ -294,6 +305,7 @@ footer a:hover {
 
 
     /* BUTTONS */
+
     button {
         width: 100%;
         max-width: 100%;
@@ -301,6 +313,7 @@ footer a:hover {
 
 
     /* TABLES */
+
     .table-container {
         width: 100%;
         max-width: 100%;
@@ -308,20 +321,50 @@ footer a:hover {
     }
 
     table {
+        width: 100%;
         max-width: 100%;
     }
 
 
     /* TEXT */
+
     p,
     li,
     dd,
     dt {
-        overflow-wrap: break-word;
+        overflow-wrap: anywhere;
+    }
+
+
+    /* JOBS PAGE */
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #jobs-intro,
+    #positions,
+    #aside {
+        grid-column: 1;
+        width: 100%;
+        min-width: 0;
+    }
+
+    #aside {
+        grid-row: auto;
+        position: static;
+        margin-right: 0 !important;
+    }
+
+    #positions ol {
+        padding-left: 25px;
     }
 
 
     /* FOOTER */
+
     footer {
         width: 100%;
         padding: 15px 10px;
@@ -331,7 +374,6 @@ footer a:hover {
     }
 
     footer a {
-        overflow-wrap: break-word;
+        overflow-wrap: anywhere;
     }
 }
-
