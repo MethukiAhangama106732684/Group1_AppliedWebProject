@@ -440,6 +440,19 @@ nav {
 /*-------------------------------------------------------------------------------------------------------------------*/
 
 /* CSS for about.html starts here */
+/*
+
+filename: [about.css]
+
+author: [Krishaga Hasithya]
+
+created: [04/09/2026]
+
+last modified: [07/09/2026]
+
+description: [about.html page styling]
+
+*/
 
 * {
     box-sizing: border-box;
@@ -460,7 +473,7 @@ nav {
   
   /* about.html: hero section  */
   .about-hero {
-    background-color: #f4f7f7;
+    background-color: #f4f4f7;
     padding: 2rem 1.5rem;
     border-left: 4px solid #5170ff;
   }
@@ -469,7 +482,7 @@ nav {
   /* Class selector used consistently wherever a student ID appears */
   .student-id {
     font-family: monospace;
-    background-color: #e7f6f4;
+    background-color: #e7edf6;
     color: #5e17eb;
     padding: 0.1rem 0.4rem;
     border-radius: 3px;
@@ -490,7 +503,7 @@ nav {
     border-left: 3px solid #5170ff;
     margin: 1rem 0;
     padding: 0.5rem 1rem;
-    background-color: #f4f7f7;
+    background-color: #f4f6f7;
   }
   
   .member-quote .translation {
@@ -551,7 +564,7 @@ nav {
   
   /* Pseudo-class selector: hover effect required by the brief */
   table.fun-facts tbody tr:hover {
-    background-color: #e7f6f4;
+    background-color: #e7f2f6;
   }
   
   /* nth-child selector: subtle striping for readability, not colour-only cue */
