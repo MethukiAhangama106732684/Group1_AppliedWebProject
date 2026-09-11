@@ -163,6 +163,7 @@ h5 {
       grid-template-columns: 1fr;
       gap: 20px;
       padding: 0 15px;
+      margin: 0;
   }
 
   #jobs-main #jobs-intro {
