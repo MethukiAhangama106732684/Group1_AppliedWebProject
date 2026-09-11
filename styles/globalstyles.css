@@ -200,16 +200,8 @@ footer a:hover {
         overflow-x: hidden;
     }
 
-    body {
-        font-size: 16px;
-        line-height: 1.6;
-    }
-
     main {
-        width: 100%;
-        max-width: 100%;
         padding: 20px 15px;
-        margin: 0 auto;
     }
 
     img {
@@ -291,7 +283,6 @@ footer a:hover {
         background: #030407;
         color: white;
         text-decoration: none;
-        padding: 4px 8px;
         border: 2px solid #ffffff;
         border-radius: 3px;
         font-weight: bold;
@@ -349,57 +340,6 @@ footer a:hover {
     li,
     dd,
     dt {
-        overflow-wrap: anywhere;
-    }
-
-
-    /* JOBS PAGE */
-
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    #jobs-intro, #positions, #aside {
-        grid-column: 1;
-        width: 100%;
-        min-width: 0;
-    }
-
-    .job-info {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        padding: 15px;
-    }
-
-    #positions ol li:hover .more-info {
-        display: grid;
-    }
-
-    #aside {
-        grid-row: auto;
-        position: static;
-        margin-right: 0 !important;
-    }
-
-    #positions ol {
-        padding-left: 25px;
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        width: 100%;
-        padding: 15px 10px;
-        margin-top: 2rem;
-        text-align: center;
-        overflow-wrap: break-word;
-    }
-
-    footer a {
         overflow-wrap: anywhere;
     }
 }
