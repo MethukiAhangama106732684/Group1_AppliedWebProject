@@ -8,11 +8,13 @@ Technologies used: HTML, CSS, GitHub, Jira
 Link to GitHub: https://github.com/MethukiAhangama106732684/Group1_AppliedWebProject
 Link to Jira: https://methukiahangama.atlassian.net/jira/software/projects/G1AWP/boards/35/backlog
 
-Note: the website was made more accessible and inclusive by:
+The website was made more accessible and inclusive by:
 - having a strong colour contrast between text and background colours
 - using a font over 16px at all times 
 - using only sans serif fonts to accomodate people with dyslexia
 - having text hierarchy to clearly address headings
+
+Note: For the jobs page, hover to see more information about each page
 
   
 Authors: Shakthi Shree Gurumurthy Senthilkumarasivam, Krishaga Hasithya, Adam Nadeem, Methuki Ahangama
