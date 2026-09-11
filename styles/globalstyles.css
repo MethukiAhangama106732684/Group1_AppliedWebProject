@@ -122,9 +122,7 @@ nav a {
     border-radius: 1px;
     font-weight: bold;
     text-align: center;
-
-    /* Makes the colour and shadow change smoothly */
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;  /* Makes the colour and shadow change smoothly */
 }
 
 /* Hover effect */
@@ -137,14 +135,6 @@ nav a:hover {
 
     transform: translateY(-2px);
 }
-
-/* This is for better user engagement. The user will know which page they are on */
-nav a.active {
-    background: white;
-    color: white;
-    border-color: white;
-}
-
 
 
 /* =========================================================
@@ -297,7 +287,7 @@ footer a:hover {
     nav a {
         width: 100%;
         padding: 10px 8px;
-        font-size: 0.9rem;nav a {
+        font-size: 0.9rem;
         background: white;
         color: #5e17ef;
         text-decoration: none;
@@ -307,7 +297,6 @@ footer a:hover {
         font-weight: bold;
         text-align: center;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-        }
     }
 
 
