@@ -113,19 +113,27 @@ nav {
 }
 
 nav a {
-    background: white;
-    color: #5e17ef;
+    font-size: 1.1rem;
+    background: #030407;
+    color: white;
     text-decoration: none;
-    padding: 10px 16px;
-    border: 2px solid #5170ff;
-    border-radius: 5px;
+    padding: 5px 12px;
+    border: 2px solid #ffffff;
+    border-radius: 1px;
     font-weight: bold;
     text-align: center;
+    transition: all 0.3s ease;  /* Makes the colour and shadow change smoothly */
 }
 
+/* Hover effect */
 nav a:hover {
-    background: #5170ff;
+    background: #030407;
     color: white;
+
+    /* White shadow/glow around the button */
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+
+    transform: translateY(-2px);
 }
 
 
@@ -280,6 +288,15 @@ footer a:hover {
         width: 100%;
         padding: 10px 8px;
         font-size: 0.9rem;
+        background: white;
+        color: #5e17ef;
+        text-decoration: none;
+        padding: 10px 16px;
+        border: 2px solid #5170ff;
+        border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     }
 
 
