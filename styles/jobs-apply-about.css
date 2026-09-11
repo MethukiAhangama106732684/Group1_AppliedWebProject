@@ -185,12 +185,12 @@ html {
 
 /*main styling*/
 /* Styles each form fieldset with a border, rounded corners,
-   spacing, and a light background. */
+  spacing, and a light background. */
 
-section{
+.section-content{
     width: 100%;
 }
-section h2{
+.section-content h2{
     text-align: left;
     margin-bottom: 10px;
     font-size: 2.8rem;
