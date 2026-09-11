@@ -176,6 +176,8 @@ skills required."
                         <legend>Skills</legend>
                         <p>Select all that apply:</p>
                         <p>Please list your relevant skills:</p>
+                        <p style="color: red; font-weight: bold; margin-bottom: 10px;">
+                        Please select at least one skill.</p>
                         <input type="checkbox" id="network-security" name="skills[]" value="network_security" required>
                         <label for="network-security">Network Security</label>
                         <input type="checkbox" id="penetration-testing" name="skills[]" value="penetration_testing">
@@ -195,8 +197,7 @@ skills required."
                         
                         <label for="other_skills">Other Skills:</label>
                         <textarea id="other_skills" name="other_skills" placeholder="Please list any other relevant skills..." rows="4" cols="50"></textarea>
-                        <p id="skills-error" style="color: red; display: none; font-weight: bold; margin-top: 10px;">Please select at least one skill.</p>
-                    </fieldset>
+                        
                    
                     <fieldset>
                         <!--Form Fields for Education-->
