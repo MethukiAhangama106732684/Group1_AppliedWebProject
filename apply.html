@@ -70,20 +70,20 @@ skills required."
                         <label for="job_ref">Job Reference Number:</label>
                         <input type="text" id="job_ref" name="job_ref" pattern="[A-Za-z0-9]{6}" minlength="6" maxlength="6" required>
                     </fieldset>
-                    <br><br>
+                    
                     <fieldset>
                         <!-- Form fields for personal information -->
                         <legend>Personal Information</legend>
                         <!-- Form fields for first name, last name, date of birth -->
                         <label for="firstname">First Name:</label>
                         <input type="text" id="firstname" name="firstname" pattern="[A-Za-z ]{2,20}" maxlength="20" placeholder="Please enter your first name" required>
-                        <br><br>
+                        
                         <label for="lastname">Last Name:</label>
                         <input type="text" id="lastname" name="lastname" pattern="[A-Za-z ]{2,20}" maxlength="20" placeholder="Please enter your last name" required>
-                        <br><br>
+                        
                         <label for="DOB">Date of Birth:</label>
                         <input type="text" id="DOB" name="DOB" placeholder="dd/mm/yyyy" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required>
-                        <br><br>
+                        
                         <fieldset>
                             <!-- Form fields for gender selection -->
                             <legend>Gender</legend>
@@ -101,9 +101,9 @@ skills required."
                             <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say" required>
                             <label for="prefer-not-to-say">Prefer not to say</label>
                         </fieldset>
-                        <br><br>
+                        
                     </fieldset>
-                    <br><br>
+                    
                     <fieldset>
                         <!--Form fields for address-->
                         <legend>Address</legend>
@@ -127,7 +127,7 @@ skills required."
                         <label for="postcode">Postcode:</label>
                         <input type="text" id="postcode" name="postcode" pattern="[0-9]{4}" maxlength="4" required>
                     </fieldset>
-                    <br><br>
+                    
                     <fieldset>
                         <!-- Form fields for position information -->
                         <legend>Position Information</legend>
@@ -150,7 +150,7 @@ skills required."
                             <option value="casual">Casual</option>
                         </select>
                     </fieldset>
-                    <br><br>
+                    
                     <fieldset>
                         <!--Form Fields for contact information-->
                         <legend>Contact Information</legend>
@@ -159,7 +159,7 @@ skills required."
                         <label for="email">Email Address:</label>
                         <input type="email" id="email" name="email" placeholder="example@domain.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                     </fieldset>
-                    <br><br>
+                    
                     <fieldset>
                         <!--Form Fields for resume upload and other documents-->
                         <legend>Resume Upload</legend>
@@ -170,12 +170,13 @@ skills required."
                         <label for="others">Upload any relevant certifications (PDF, DOC, DOCX):</label>
                         <input type="file" id="others" name="others" accept=".pdf,.doc,.docx">
                     </fieldset>
-                    <br><br>
+                    
                     <fieldset>
                         <!--Form Fields for Skills-->
                         <legend>Skills</legend>
-                        <p>Select all that apply:</p>
-                        <p>Please list your relevant skills:</p>
+                        <p class="form-instruction">Select all that apply:</p>
+                        <p class="required-note">Please select at least one skill.</p>
+                       
                         <input type="checkbox" id="network-security" name="skills[]" value="network_security" required>
                         <label for="network-security">Network Security</label>
                         <input type="checkbox" id="penetration-testing" name="skills[]" value="penetration_testing">
@@ -192,12 +193,11 @@ skills required."
                         <label for="cloud-security">Cloud Security</label>
                         <input type="checkbox" id="problem-solving-analytical-thinking" name="skills[]" value="Problem_Solving & Analytical_Thinking">
                         <label for="problem-solving-analytical-thinking">Problem Solving & Analytical Thinking</label>
-                        <br><br>
+                        
                         <label for="other_skills">Other Skills:</label>
                         <textarea id="other_skills" name="other_skills" placeholder="Please list any other relevant skills..." rows="4" cols="50"></textarea>
-                        <p id="skills-error" style="color: red; display: none; font-weight: bold; margin-top: 10px;">Please select at least one skill.</p>
+                        
                     </fieldset>
-                    <br><br>
                     <fieldset>
                         <!--Form Fields for Education-->
                         <legend>Education</legend>
@@ -215,7 +215,7 @@ skills required."
                         <label for="additional_education">Additional Education or Certifications:</label>
                         <textarea  id="additional_education" name="additional_education" placeholder="Please list any additional education or certifications..." rows="4" cols="50"></textarea>
                     </fieldset>
-                    <br><br>
+                    
                     <fieldset>
                         <!--Form Fields for Availability-->
                         <legend>Availability</legend>
@@ -232,12 +232,10 @@ skills required."
                         <input type="checkbox" id="friday" name="availability[]" value="friday">
                         <label for="friday">Friday</label>
                     </fieldset>
-                    <br><br>
+                    
                     <!-- Form buttons -->
                     
                     <div class="form-buttons">
-                        <button type="submit" name="action" value="save" class="btn-save">Save</button>
-                        <button type="reset" class="btn-close">Close</button>
                         <button type="reset">Reset</button>
                         <button type="submit">Submit</button>
                     
