@@ -203,7 +203,7 @@ section h2{
     text-align: left;
     margin-bottom: 10px;
     font-size: 2.8rem;
-    color:#5170ff;
+    
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -231,23 +231,8 @@ form{
     padding: 20px;
     background: #f8fafc;
  }
- .form-instruction {
-    margin: 5px 0;
-    padding: 0;
-    border: none;
-    color: #0d0d0d;
-}
-
-.required-note {
-    margin: 5px 0;
-    padding: 0;
-    border: none;
-    color: red;
-    font-weight: bold;
-}
-
- /*full-width fieldsets-Makes selected form sections span across both columns
-   of the two-column form layout. */
+ /*full-width fieldsets-Makes selected form sections span across column
+   of the  form layout. */
 
 /* **Acknowledgement:** Used ChatGPT to find out how to make selected sections of form span the full width of the form.
 **Prompt used:** “What can I do in CSS to make selected fieldsets take the full width of the form?”*/
@@ -412,11 +397,7 @@ font-weight: bold;
 cursor: pointer;
 }
 /* Attribute selectors */
-button[type="button"] {
-background: #0d0d0d;
-color: white;
-border: 1px solid #5e17eb;
-}
+
 button[type="reset"] {
 background: white;
 color: #111827;
