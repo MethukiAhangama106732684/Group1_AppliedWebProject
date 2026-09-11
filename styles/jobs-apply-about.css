@@ -18,7 +18,7 @@ description: [CSS specifically for jobs.html]
 /* Jobs page intro part */
 #jobs-intro {
     background-color: #f4f2ff;
-    border: solid #5170ff;
+    border: solid #5e17eb;
     height: auto;
     margin: 10px;
     padding: 10px 20px;
@@ -60,6 +60,7 @@ description: [CSS specifically for jobs.html]
 }
 
 /* More information */
+
 .more-info {
   width: 100%;
   margin: 5px 0 0 0;
@@ -73,6 +74,7 @@ description: [CSS specifically for jobs.html]
   gap: 20px;
 }
 
+/* more info visible when hovered on the ol li*/
 #jobs-main ol li:hover .more-info {
   display: grid;
 }
@@ -83,7 +85,7 @@ description: [CSS specifically for jobs.html]
   font-weight: normal;
 }
 
-/* Requirement boxes */
+/* Responsibilities and requirement boxes */
 .key-responsibilities,
 .essential-requirements,
 .preferable-requirements {
@@ -125,7 +127,7 @@ h5 {
   box-sizing: border-box;
   margin-bottom: 50px;
   background-color: #f4f2ff;
-  border: 2px solid #5170ff;
+  border: 2px solid #5e17eb;
   border-radius: 10px;
   height: fit-content;
   position: sticky;
@@ -172,6 +174,8 @@ h5 {
       margin-left: 0;
       width: 100%;
   }
+
+  /* on smaller screens more info is visible wihtout having to use the hover*/
 
   #jobs-main .more-info {
     display: grid;
