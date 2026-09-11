@@ -59,7 +59,7 @@ p, li {
 
 header {
     background: #030407;
-    padding: 25px 6%;
+    padding: 20px 6%;
     border-bottom: 3px solid #155cff;
     display: flex;
     align-items: center;
@@ -141,7 +141,7 @@ nav a:hover {
    FOOTER
    ========================================================= */
 
-   footer {
+footer {
     background-color: #0d0d0d;
     color: #ffffff;
     padding: 15px;
@@ -168,7 +168,7 @@ footer a:hover {
 @media (max-width: 900px) {
 
     header {
-        padding: 20px 4%;
+        padding: 18px 4%;
     }
 
     #header-brand {
@@ -183,6 +183,7 @@ footer a:hover {
     nav a {
         padding: 9px 12px;
     }
+
 }
 
 
@@ -278,7 +279,6 @@ footer a:hover {
         position: static;
         width: 100%;
         margin-top: 20px;
-
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 8px;
@@ -288,15 +288,15 @@ footer a:hover {
         width: 100%;
         padding: 10px 8px;
         font-size: 0.9rem;
-        background: white;
-        color: #5e17ef;
+        background: #030407;
+        color: white;
         text-decoration: none;
-        padding: 10px 16px;
-        border: 2px solid #5170ff;
-        border-radius: 5px;
+        padding: 4px 8px;
+        border: 2px solid #ffffff;
+        border-radius: 3px;
         font-weight: bold;
         text-align: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;  /* Makes the colour and shadow change smoothly */
     }
 
 
@@ -361,12 +361,21 @@ footer a:hover {
         gap: 20px;
     }
 
-    #jobs-intro,
-    #positions,
-    #aside {
+    #jobs-intro, #positions, #aside {
         grid-column: 1;
         width: 100%;
         min-width: 0;
+    }
+
+    .job-info {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        padding: 15px;
+    }
+
+    #positions ol li:hover .more-info {
+        display: grid;
     }
 
     #aside {
